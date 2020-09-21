@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Vale's Portfolio`,
-    description: `Valentina Calabrese - Front-end Software Engineer.`,
+    title: `Valentina Calabrese`,
+    description: `Valentina Calabrese - Front-end Software Engineer`,
     author: ``,
   },
   plugins: [

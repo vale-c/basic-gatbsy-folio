@@ -8,17 +8,31 @@ export const HeaderLinks = styled.div`
     justify-content: flex-start;
     align-items: center;
     & > a {
+        color: #fff;
+        text-decoration: none;
         margin: 0 15px;
+    }
+    &:hover {
+        cursor: pointer;
     }
 `;
 
-export const HeaderTitle = styled.h1`
-    flex-basis: 90%;
+export const HeaderTitle = styled.div`
+    font-size: 32px;
+    flex-basis: 100%;
     text-align: center;
+    & > a {
+        color: #fff;
+        text-decoration: none;
+        &: hover {
+            cursor: pointer;
+        }
+    }
 `;
 
 export const HeaderWrapper = styled.div`
     background: ${colors.blue600};
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
