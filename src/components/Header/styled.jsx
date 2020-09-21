@@ -37,5 +37,4 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 40px;
-    margin-top: -8px;
 `;
