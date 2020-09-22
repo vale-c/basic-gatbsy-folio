@@ -1,7 +1,8 @@
-import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import {  HeaderLinks, HeaderTitle, HeaderWrapper } from './styled';
+import { Link } from 'gatsby';
+import { HeaderLinks, HeaderTitle, HeaderWrapper, StyledLink } from './styled';
+
 
 const Header = ({ siteTitle }) => (
     <HeaderWrapper>
@@ -14,16 +15,18 @@ const Header = ({ siteTitle }) => (
       </HeaderTitle>
   
       <HeaderLinks>
-        <Link
-          activeClassName="Link--is-active"
-          to="/work">
-          Work
-        </Link>
-        <Link
-          activeClassName="Link--is-active"
-          to="/blog">
-          Blog
-        </Link>
+        <StyledLink
+            to="/about/">
+            About
+        </StyledLink>
+        <StyledLink
+            to="/work/">
+            Work
+        </StyledLink>
+        <StyledLink
+            to="/blog/">
+            Blog
+        </StyledLink>
       </HeaderLinks>
     </HeaderWrapper>
 

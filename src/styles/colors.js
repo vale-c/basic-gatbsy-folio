@@ -10,13 +10,14 @@ const colors = {
   blue200: "#e3efff",
   blue100: "#f1f8ff",
 
-  green600: "#61A840",
+  green600: "#00FF00",
+  green400: "#0BB000",
   green500: "#6CBB47",
   green200: "#E2F1DA",
   green100: "#F0F8ED",
 
   grey900: "#111010",
-  grey800: "#3D3F42",
+  grey800: "#212428",
   grey700: "#7D7F81",
   grey600: "#A9AAAB",
   grey500: "#BEBFC0",
@@ -54,6 +55,8 @@ const colors = {
   teal500: "#17B1B1",
   teal200: "#D1EFEF",
   teal100: "#E8F7F7",
+
+  white: "#fff",
 }
 
 export default colors;

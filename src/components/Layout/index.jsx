@@ -10,8 +10,11 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "../Header";
-import { LayoutContainer, LayoutContent } from './styled';
+import { LayoutContainer } from './styled';
 import Footer from "../Footer";
+
+import GlobalStyle from "../../styles/GlobalStyle";
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,11 +29,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <LayoutContainer>
-        <LayoutContent>
-          <main>{children}</main>
-        </LayoutContent>
+          <main id="main-content">{children}</main>
       </LayoutContainer>
       <Footer/>
     </>

@@ -6,11 +6,3 @@ export const LayoutContainer = styled.div`
     margin: 0 auto;
     padding: 0 1.5rem;
 `;
-
-export const LayoutContent = styled.div`
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-`;
-

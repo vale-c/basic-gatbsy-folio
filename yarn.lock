@@ -2778,6 +2778,11 @@ babel-plugin-remove-graphql-queries@2.9.12, babel-plugin-remove-graphql-queries@
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.12.tgz#9d6b22b799ac11173fb91c8973f88846b391c130"
   integrity sha512-CJjsW331GuuU+h3SpKcrtMfzq3+Ypq6Oth8UQCBO3SP2gJw0EUGPVpmQwEXIT94sotUfVLWCasGQK7rRaeYb1A==
 
+babel-plugin-remove-graphql-queries@^2.9.12:
+  version "2.9.19"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.19.tgz#e53f7062be69d96d60c3ed261ffc9260fa777b36"
+  integrity sha512-s8Ar5NtJD5JXsRntMFKBMjIauWaGCOTTyZO4XdaktRA7JW1gzzN0p1uyiW9QaNenVbzV+RR4ceObCwlfH8e/xA==
+
 "babel-plugin-styled-components@>= 1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.11.1.tgz#5296a9e557d736c3186be079fff27c6665d63d76"
@@ -12835,6 +12840,11 @@ styled-components@^5.2.0:
     hoist-non-react-statics "^3.0.0"
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
+
+styled-modern-normalize@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/styled-modern-normalize/-/styled-modern-normalize-0.2.0.tgz#6580e1c4bde136028b158e9b9ba0ed6e6ecd096c"
+  integrity sha512-eLvp2IiVbWckiIxpG4SohlfFhXAWYbEfg6oDiylKzA1XZbZASToX4K3KRF1e3l4CUPAbHhs7Be5xUtAmEy8Yjw==
 
 stylehacks@^4.0.0:
   version "4.0.3"

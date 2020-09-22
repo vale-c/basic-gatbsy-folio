@@ -3,15 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import { FooterWrapper } from './styled'
 
-
 const Footer = ({ children }) => (
-<FooterWrapper> 
-    <footer >
-        © {new Date().getFullYear()}, Built with ☕ & 💖 by
-        {` `}
-        <a href="https://www.valentinacalabrese.com" target="_blank" rel="noopener noreferrer">Vale</a>
-    </footer>
+
+<FooterWrapper>
+© {new Date().getFullYear()}, Built with ☕ & 💖 by
+{` `}
+<a href="https://www.valentinacalabrese.com" target="_blank" rel="noopener noreferrer">Vale</a>
 </FooterWrapper>
+
 )
 
 export default Footer
