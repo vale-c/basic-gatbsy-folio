@@ -1,5 +1,11 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 //theme colors and tints (dark900 to normal500 to light100)
-const colors = {
+var colors = {
   blue900: "#192c4c",
   blue800: "#2a4a7f",
   blue700: "#3a67b2",
@@ -9,13 +15,11 @@ const colors = {
   blue300: "#cbdfff",
   blue200: "#e3efff",
   blue100: "#f1f8ff",
-
   green500: "#00FF00",
   green400: "#45EBA5",
   green300: "#89F8CE",
   green200: "#B8FFD0",
   green100: "#F0F8ED",
-
   grey900: "#111010",
   grey800: "#212428",
   grey700: "#7D7F81",
@@ -25,12 +29,10 @@ const colors = {
   grey300: "#E9EAEA",
   grey200: "#F2F2F2",
   grey100: "#F9F9FA",
-
   orange600: "#DC6039",
   orange500: "#F46B3F",
   orange200: "#FDE1D9",
   orange100: "#FEF0EC",
-
   pink900: "#804980",
   pink800: "#B366B3",
   pink700: "#CC74CC",
@@ -40,7 +42,6 @@ const colors = {
   pink300: "#FFC8FF",
   pink200: "#FFFEFF",
   pink100: "#FFF4FF",
-
   purple900: "#36254C",
   purple800: "#5B3E80",
   purple700: "#7f56b3",
@@ -50,13 +51,11 @@ const colors = {
   purple300: "#D3B0FF",
   purple200: "#F0E5FF",
   purple100: "#F8F2FF",
-
   teal600: "#159f9f",
   teal500: "#17B1B1",
   teal200: "#D1EFEF",
   teal100: "#E8F7F7",
-
-  white: "#fff",
-}
-
-export default colors;
+  white: "#fff"
+};
+var _default = colors;
+exports["default"] = _default;

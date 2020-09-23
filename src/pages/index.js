@@ -8,7 +8,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `portfolio`, `react`]} />
     <LandingBio />
-    <Link to="/"><span role="img" aria-label="back-emoji">🔙 Home</span></Link>
   </Layout>
 )
 

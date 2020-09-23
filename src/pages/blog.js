@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled, { css } from "styled-components"
+import colors from '../styles/colors'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -21,15 +22,15 @@ const MarkerHeader = styled.h3`
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    ${colors.blue400},
+    ${colors.blue500} 100%,
+    ${colors.blue100}
   );
 `
 
 const ReadingTime = styled.h5`
   display: inline;
-  color: #606060;
+  color: ${colors.white};
 `
 
 const IndexPage = ({ data }) => {

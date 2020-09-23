@@ -2,45 +2,71 @@ import styled from 'styled-components'
 import colors from "../../styles/colors"
 import { Link } from "gatsby"
 
-export const HeaderLinks = styled.div`
-    flex: 1;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    & > a {
-        color: ${colors.white};
-        text-decoration: none;
-        margin: 0 15px;
-    }
-`;
+export const Content = styled.div`
+    max-width: 860px;
+    padding: 1rem 1.0875rem;
+    font-size: 1.2rem;
+`
 
-export const StyledLink = styled(Link)`
-    transition: color 300ms ease-in-out;
+export const NavLink = styled(Link)`
     color: ${colors.white};
-    padding: 0 6px;
-    &:hover {
-        border-bottom: 3px solid ${colors.white};
+    margin-left: 15px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: ${colors.white};
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    :hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 `
-export const HeaderTitle = styled.div`
-    font-size: 32px;
-    flex-basis: 100%;
-    margin-left: 100px;
-    text-align: center;
-    & > a {
-        color: ${colors.white};
-        text-decoration: none;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-`;
 
-export const HeaderWrapper = styled.div`
-    background: ${colors.green600};
+export const GitHubLink = styled.a`
+    color: ${colors.white};
+    margin-left: 15px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: ${colors.white};
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    :hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+`
+
+export const HomeLink = styled(NavLink)`
+    margin-left: 0;
+`
+
+export const SiteHeader = styled.header`
+    background: transparent;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 50px;
-`;
+    align-content: center;
+    justify-content: center;
+`
