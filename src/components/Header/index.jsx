@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { Link } from 'gatsby';
-import { HeaderLinks, HeaderTitle, HeaderWrapper, StyledLink } from './styled';
+import PropTypes from "prop-types"
+import React from "react"
+import { Link } from 'gatsby'
+import { HeaderLinks, HeaderTitle, HeaderWrapper, StyledLink } from './styled'
 
 
 const Header = ({ siteTitle }) => (
@@ -32,4 +32,4 @@ const Header = ({ siteTitle }) => (
 
 )
 
-export default Header;
+export default Header

@@ -5,15 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
-import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../Header";
-import { LayoutContainer } from './styled';
-import Footer from "../Footer";
+import Header from "../Header"
+import { LayoutContainer } from './styled'
+import Footer from "../Footer"
 
-import GlobalStyle from "../../styles/GlobalStyle";
+import GlobalStyle from "../../styles/GlobalStyle"
 
 
 const Layout = ({ children }) => {

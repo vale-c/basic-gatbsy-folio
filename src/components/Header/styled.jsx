@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import colors from "../../styles/colors";
-import { Link } from "gatsby";
+import styled from 'styled-components'
+import colors from "../../styles/colors"
+import { Link } from "gatsby"
 
 export const HeaderLinks = styled.div`
     flex: 1;

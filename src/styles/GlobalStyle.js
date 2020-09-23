@@ -1,4 +1,4 @@
-import { createGlobalStyle, injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import modernNormalize from "styled-modern-normalize"
 import colors from './colors';
 

@@ -1,15 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import LandingBio from "../components/LandingBio"
 import Layout from "../components/Layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hey there</h1>
-    <p>Welcome to my personal website.</p>
-    <p>A digital space where ideas 💡 are converted into pixels 💻.</p>
+    <SEO title="Home" keywords={[`gatsby`, `portfolio`, `react`]} />
+    <LandingBio />
+    <Link to="/"><span role="img" aria-label="back-emoji">🔙 Home</span></Link>
   </Layout>
 )
 
