@@ -1,14 +1,14 @@
 //theme colors and tints (dark900 to normal500 to light100)
 const colors = {
-  blue900: "#192c4c",
-  blue800: "#2a4a7f",
-  blue700: "#3a67b2",
-  blue600: "#4b84e5",
-  blue500: "#5393fe",
-  blue400: "#73abff",
-  blue300: "#cbdfff",
-  blue200: "#e3efff",
-  blue100: "#f1f8ff",
+  blue900: "#192C4C",
+  blue800: "#2A4A7f",
+  blue700: "#3A67B2",
+  blue600: "#4B84E5",
+  blue500: "#5393FE",
+  blue400: "#73ABFF",
+  blue300: "#CBDFFF",
+  blue200: "#E3EFFF",
+  blue100: "#F1F8FF",
 
   green500: "#00FF00",
   green400: "#45EBA5",
@@ -43,7 +43,7 @@ const colors = {
 
   purple900: "#36254C",
   purple800: "#5B3E80",
-  purple700: "#7f56b3",
+  purple700: "#7F56B3",
   purple600: "#A36FE6",
   purple500: "#B57BFF",
   purple400: "#C495FF",
@@ -51,12 +51,12 @@ const colors = {
   purple200: "#F0E5FF",
   purple100: "#F8F2FF",
 
-  teal600: "#159f9f",
+  teal600: "#159F9F",
   teal500: "#17B1B1",
   teal200: "#D1EFEF",
   teal100: "#E8F7F7",
 
-  white: "#fff",
+  white000: "#FFF",
 }
 
-export default colors;
+export default colors

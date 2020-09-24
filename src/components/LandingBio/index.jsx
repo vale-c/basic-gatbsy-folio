@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-import { OuterContainer, Container, NameHeader, Description} from './styled'
+import Image from "../image"
+import { OuterContainer, Container, NameHeader, Description } from "./styled"
 
 const LandingBio = () => (
   <StaticQuery
@@ -21,6 +21,7 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
+          <Image fadeIn />
         </Container>
       </OuterContainer>
     )}
@@ -38,5 +39,3 @@ NameHeader.defaultProps = {
   siteTitle: ``,
   subtitle: ``,
 }
-
-

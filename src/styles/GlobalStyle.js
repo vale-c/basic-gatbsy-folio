@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
-import colors from './colors';
+import colors from "./colors"
 
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: ${colors.grey800};
-        color: ${colors.white};
+        color: ${colors.white000};
         font-size: 1rem;
         font-family: 'VT323', monospace;
         line-height: 1.5rem;
@@ -81,6 +81,6 @@ const GlobalStyle = createGlobalStyle`
         color: ${colors.grey200};
         opacity: 0.1;
     }
-`;
+`
 
 export default GlobalStyle

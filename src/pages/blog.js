@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled, { css } from "styled-components"
-import colors from '../styles/colors'
+import colors from "../styles/colors"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -30,7 +30,7 @@ const MarkerHeader = styled.h3`
 
 const ReadingTime = styled.h5`
   display: inline;
-  color: ${colors.white};
+  color: ${colors.white000};
 `
 
 const IndexPage = ({ data }) => {
