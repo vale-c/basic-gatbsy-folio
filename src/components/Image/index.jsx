@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StyledImage } from "./styled"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -30,7 +30,7 @@ const Image = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <StyledImage fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default Image

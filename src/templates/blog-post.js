@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import colors from '../styles/colors'
+import colors from "../styles/colors"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,19 +13,20 @@ const Content = styled.div`
 `
 
 const MarkedHeader = styled.h1`
+  color: ${colors.grey100};
   display: inline;
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    ${colors.blue400},
-    ${colors.blue500} 100%,
-    ${colors.blue100}
+    ${colors.blue500},
+    ${colors.green400} 100%,
+    ${colors.purple600}
   );
 `
 
 const HeaderDate = styled.h3`
   margin-top: 10px;
-  color: #606060;
+  color: ${colors.white000};
 `
 
 // STYLE THE TAGS INSIDE THE MARKDOWN HERE
@@ -34,10 +35,7 @@ const MarkdownContent = styled.div`
     text-decoration: none;
     position: relative;
 
-    background-image: linear-gradient(
-      rgba(255, 250, 150, 0.8),
-      rgba(255, 250, 150, 0.8)
-    );
+    background-image: linear-gradient(${colors.grey200}, ${colors.grey200});
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;

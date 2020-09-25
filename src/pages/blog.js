@@ -9,28 +9,29 @@ import SEO from "../components/seo"
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.5rem;
 `
 
 const ArticleDate = styled.h5`
   display: inline;
-  color: #606060;
+  color: ${colors.white000};
 `
 
 const MarkerHeader = styled.h3`
+  color: ${colors.grey100};
   display: inline;
-  border-radius: 1em 0 1em 0;
+  border-radius: 2.4em 0 4em 0;
   background-image: linear-gradient(
     -100deg,
-    ${colors.blue400},
-    ${colors.blue500} 100%,
-    ${colors.blue100}
+    ${colors.blue500},
+    ${colors.green400} 100%,
+    ${colors.purple600}
   );
 `
 
 const ReadingTime = styled.h5`
   display: inline;
-  color: ${colors.white000};
+  color: ${colors.grey400};
 `
 
 const IndexPage = ({ data }) => {
