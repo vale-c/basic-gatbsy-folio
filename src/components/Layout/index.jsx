@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
       <LayoutContainer>
         <main id="main-content">{children}</main>
       </LayoutContainer>
-      <Footer />
     </>
   )
 }

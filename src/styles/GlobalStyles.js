@@ -10,17 +10,20 @@ const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+
     html {
-        width: 100%;
-        height: 100%;
+        background-color: ${({ theme }) => theme.bgDark};
     }
+    
     body {
         font-size: 22px;
         font-family: 'VT323', monospace;
+        color: ${({ theme }) => theme.color};
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Fira Sans', sans-serif;
+        color: ${({ theme }) => theme.color};
     }
 
     .react-toggle--checked .react-toggle-track,

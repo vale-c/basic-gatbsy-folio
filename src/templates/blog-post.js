@@ -7,9 +7,9 @@ import Layout from "../components/layout"
 import SEO from "../pages/seo"
 
 const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 1.45rem 1.0875rem;
+  max-width: 1280px;
+  padding: 4rem 0;
+  background-color: ${({ theme }) => theme.bg};
 `
 
 const MarkedHeader = styled.h1`
@@ -26,7 +26,7 @@ const MarkedHeader = styled.h1`
 
 const HeaderDate = styled.h3`
   margin-top: 10px;
-  color: ${colors.white000};
+  color: ${({ theme }) => theme.color};
 `
 
 // STYLE THE TAGS INSIDE THE MARKDOWN HERE
@@ -34,7 +34,6 @@ const MarkdownContent = styled.div`
   a {
     text-decoration: none;
     position: relative;
-
     background-image: linear-gradient(${colors.grey200}, ${colors.grey200});
     background-repeat: no-repeat;
     background-size: 100% 0.2em;

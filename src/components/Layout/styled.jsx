@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import colors from "../../styles/colors"
 
 export const LayoutContainer = styled.div`
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
 `

@@ -1,15 +1,15 @@
 import colors from '../styles/colors'
 
 const lightTheme = {
-  bg:`${colors.white000}`,
-  bgDark: `${colors.blue300}`,
+  bg:`${colors.pink100}`,
+  bgDark: `${colors.white000}`,
   color: `${colors.grey900}`,
-  accent: `${colors.blue600}`,
+  accent: `${colors.pink600}`,
 }
 
 const darkTheme = {
   bg: `${colors.grey900}`,
-  bgDark: `${colors.grey900}`,
+  bgDark: `${colors.grey800}`,
   color:`${colors.white000}`,
   accent: `${colors.green500}`,
 }

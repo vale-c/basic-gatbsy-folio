@@ -31,7 +31,7 @@ export const NavLink = styled(Link)`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
     transform-origin: bottom right;

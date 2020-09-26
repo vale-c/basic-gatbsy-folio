@@ -6,6 +6,5 @@ export const FooterWrapper = styled.footer`
   position: static;
   left: 0;
   right: 0;
-  bottom: 0;
-  padding-bottom: 14px;
+  margin-top: 18px;
 `

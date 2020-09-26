@@ -24,7 +24,7 @@ const Col = styled.div`
   margin: 10px;
   background: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.font};
-  border: 2px solid ${colors.grey900};
+  border: 2px solid ${({ theme }) => theme.body};
   border-radius: 8px;
   padding: 10px;
   font-family: sans-serif;
