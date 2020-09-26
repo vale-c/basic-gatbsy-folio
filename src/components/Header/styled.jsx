@@ -4,12 +4,11 @@ import { Link } from "gatsby"
 
 export const Content = styled.div`
   max-width: 860px;
-  padding: 1rem 1.0875rem;
+  padding: 1rem;
   font-size: 1.2rem;
 `
 
 export const NavLink = styled(Link)`
-  color: ${colors.white000};
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -23,7 +22,6 @@ export const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colors.white000};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -35,7 +33,6 @@ export const NavLink = styled(Link)`
 `
 
 export const GitHubLink = styled.a`
-  color: ${colors.white000};
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -49,7 +46,6 @@ export const GitHubLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colors.white000};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }

@@ -1,26 +1,42 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled, { css } from "styled-components"
-import colors from "../styles/colors"
+import colors from '../styles/colors'
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "./seo"
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
-  padding: 1.5rem;
+  padding: 1.45rem 1.0875rem;
+`
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
+
+const Col = styled.div`
+  flex: 1 1 30%;
+  max-width: 40%;
+  margin: 10px;
+  background: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.font};
+  border: 2px solid ${colors.grey900};
+  border-radius: 8px;
+  padding: 10px;
+  font-family: sans-serif;
 `
 
 const ArticleDate = styled.h5`
   display: inline;
-  color: ${colors.white000};
 `
 
 const MarkerHeader = styled.h3`
-  color: ${colors.grey100};
   display: inline;
-  border-radius: 2.4em 0 4em 0;
+  border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
     ${colors.blue500},
@@ -31,15 +47,16 @@ const MarkerHeader = styled.h3`
 
 const ReadingTime = styled.h5`
   display: inline;
-  color: ${colors.grey400};
 `
 
-const IndexPage = ({ data }) => {
+
+const BlogPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
       <Content>
         <h1>Blog</h1>
+        <Row>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate
@@ -47,7 +64,7 @@ const IndexPage = ({ data }) => {
             return date < new Date()
           })
           .map(({ node }) => (
-            <div key={node.id}>
+            <Col key={node.id}>
               <Link
                 to={node.frontmatter.path}
                 css={css`
@@ -62,14 +79,15 @@ const IndexPage = ({ data }) => {
                 <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
               </div>
               <p>{node.excerpt}</p>
-            </div>
+            </Col>
           ))}
+          </Row>
       </Content>
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPage
 
 export const query = graphql`
   query {

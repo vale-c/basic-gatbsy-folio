@@ -13,7 +13,7 @@ import Header from "../Header"
 import { LayoutContainer } from "./styled"
 import Footer from "../Footer"
 
-import GlobalStyle from "../../styles/GlobalStyle"
+import GlobalStyles from "../../styles/GlobalStyles"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <LayoutContainer>
         <main id="main-content">{children}</main>

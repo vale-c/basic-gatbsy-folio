@@ -4,7 +4,7 @@ import styled from "styled-components"
 import colors from "../styles/colors"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../pages/seo"
 
 const Content = styled.div`
   margin: 0 auto;

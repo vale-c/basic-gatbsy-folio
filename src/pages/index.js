@@ -2,7 +2,7 @@ import React from "react"
 import Image from "../components/Image"
 import LandingBio from "../components/LandingBio"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "./seo"
 
 const IndexPage = () => (
   <Layout>

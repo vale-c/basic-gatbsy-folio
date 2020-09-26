@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
 import colors from "./colors"
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
     // Import normalize.css
@@ -15,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
     body {
+        background-color: ${props =>
+        props.theme === 'dark' ? "#121212" : "#FFFFFF"};
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: ${colors.grey800};
-        color: ${colors.white000};
         font-size: 1rem;
         font-family: 'VT323', monospace;
         line-height: 1.5rem;
@@ -55,19 +55,16 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         font-size: 2rem;
         line-height: 2.375rem;
-        color: ${colors.grey400};
     }
     h2 {
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
-        color: ${colors.grey400};
     }
     h3 {
         font-weight: 700;
         font-size: 1.75rem;
         line-height: 2.25rem;
-        color: ${colors.grey300};
         margin-bottom: 3rem;
     }
     h4 {
@@ -78,9 +75,8 @@ const GlobalStyle = createGlobalStyle`
     hr {
         margin: 3rem auto;
         border-width: .05rem;
-        color: ${colors.grey200};
         opacity: 0.1;
     }
 `
 
-export default GlobalStyle
+export default GlobalStyles
