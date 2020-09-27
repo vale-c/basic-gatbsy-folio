@@ -6,7 +6,7 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.bgDark};
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.color};
+    color: ${({ theme }) => theme.accent};
   }
 `
 
@@ -17,7 +17,8 @@ export const Content = styled.div`
 `
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.accent};
+  font-family: "Changa One", sans-serif;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;

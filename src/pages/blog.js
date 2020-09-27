@@ -11,6 +11,7 @@ const PageTitle = styled.h1`
   margin-left: 10px;
 `
 const Content = styled.div`
+  color: ${({ theme }) => theme.description};
   margin: 0 auto;
   padding: 50px;
 `

@@ -13,9 +13,10 @@ export const OuterContainer = styled.div`
 `
 
 export const Description = styled.p`
+  color: ${({ theme }) => theme.description};
   padding: 0;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 18px;
 `
 
 export const NameHeader = styled.h1`

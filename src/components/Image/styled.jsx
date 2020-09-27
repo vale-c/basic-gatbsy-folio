@@ -9,8 +9,9 @@ export const StyledImage = styled(Img)`
   margin-left: 8rem;
   opacity: 0.9;
   &:hover {
-    cursor: url('https://cdn.custom-cursor.com/packs/103/ext/Skateboard.png'), auto;
-    transform: rotate(10deg);
+    cursor: url("https://cdn.custom-cursor.com/packs/103/ext/Skateboard.png"),
+      auto;
+    transform: rotate(25deg);
     transition-duration: 0.3s;
   }
 `

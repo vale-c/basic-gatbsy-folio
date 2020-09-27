@@ -1,10 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
-import colors from "./colors"
 
 const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
     // Import normalize.css
     ${modernNormalize}
     
@@ -17,15 +14,12 @@ const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        font-size: 22px;
-        font-family: 'VT323', monospace;
-        color: ${({ theme }) => theme.color};
+        font-family: "Chivo", sans-serif;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Fira Sans', monospace;
-        font-size: 16px;
-        color: ${({ theme }) => theme.color};
+        font-family: "Changa One", cursive;
+        color: ${({ theme }) => theme.accent};
     }
 
     .react-toggle--checked .react-toggle-track,
