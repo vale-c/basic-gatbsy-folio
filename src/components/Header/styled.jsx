@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import colors from "../../styles/colors"
 import { Link } from "gatsby"
 
 export const Container = styled.header`
@@ -19,14 +18,14 @@ export const Content = styled.div`
 `
 
 export const NavLink = styled(Link)`
-  color: ${colors.white000};
+  color: ${({ theme }) => theme.color};
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
 
   ::after {
-    background-color: ${colors.white000};
+    background-color: ${({ theme }) => theme.color};
     content: "";
     position: absolute;
     width: 100%;

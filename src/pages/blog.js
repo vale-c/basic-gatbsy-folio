@@ -1,11 +1,15 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import styled, { css } from "styled-components"
 import colors from "../styles/colors"
 
 import Layout from "../components/layout"
 import SEO from "./seo"
 
+const PageTitle = styled.h1`
+  margin-left: 10px;
+`
 const Content = styled.div`
   margin: 0 auto;
   padding: 50px;
@@ -22,7 +26,7 @@ const Row = styled.div`
 `
 
 const Col = styled.div`
-  flex: 1 1 30%;
+  flex: 1 1 33%;
   max-width: 50%;
   margin: 10px;
   background: ${({ theme }) => theme.body};
@@ -56,11 +60,12 @@ const ReadingTime = styled.h5`
 `
 
 const BlogPage = ({ data }) => {
+  if (!data) return <p>Shooooot! No Post found!</p>
   return (
     <Layout>
       <SEO title="Blog" />
       <Content>
-        <h1>Blog</h1>
+        <PageTitle>Blog</PageTitle>
         <Row>
           {data.allMarkdownRemark.edges
             .filter(({ node }) => {
@@ -83,6 +88,9 @@ const BlogPage = ({ data }) => {
                   <ArticleDate>{node.frontmatter.date}</ArticleDate>
                   <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
                 </div>
+                <Img
+                  fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                />
                 <p>{node.excerpt}</p>
               </Col>
             ))}
@@ -94,7 +102,7 @@ const BlogPage = ({ data }) => {
 
 export default BlogPage
 
-export const query = graphql`
+export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
@@ -114,6 +122,13 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             rawDate: date
             path
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug

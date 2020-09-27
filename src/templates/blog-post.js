@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import styled from "styled-components"
 import colors from "../styles/colors"
 
@@ -76,6 +77,7 @@ export default ({ data }) => {
         <HeaderDate>
           {post.frontmatter.date} - {post.fields.readingTime.text}
         </HeaderDate>
+        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
     </Layout>
@@ -91,6 +93,13 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM, YYYY")
         path
         title
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         readingTime {
