@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Container = styled.div`
   text-align: center;
@@ -9,7 +9,7 @@ export const OuterContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 78vh;
+  height: 75vh;
 `
 
 export const Description = styled.p`
@@ -19,6 +19,5 @@ export const Description = styled.p`
 `
 
 export const NameHeader = styled.h1`
-  font-size: 3.5rem;
-  margin-bottom: 0;
+  font-size: 32px;
 `

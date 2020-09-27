@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export const Container = styled.header`
   color: ${({ theme }) => theme.color};
   background-color: ${({ theme }) => theme.bgDark};
-  margin-bottom: 1.45rem;
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.color};
@@ -13,8 +12,8 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   max-width: 860px;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 20px 15px;
+  margin: 0 70px;
 `
 
 export const NavLink = styled(Link)`

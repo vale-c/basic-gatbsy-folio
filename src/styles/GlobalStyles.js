@@ -7,12 +7,13 @@ const GlobalStyles = createGlobalStyle`
 
     // Import normalize.css
     ${modernNormalize}
-    * {
-        box-sizing: border-box;
-    }
-
+    
     html {
-        background-color: ${({ theme }) => theme.bgDark};
+      box-sizing: border-box;
+      background-color: ${({ theme }) => theme.bgDark};
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
     }
     
     body {
@@ -23,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Fira Sans', monospace;
+        font-size: 16px;
         color: ${({ theme }) => theme.color};
     }
 
