@@ -1,17 +1,17 @@
-import colors from '../styles/colors'
+import colors from "../styles/colors"
 
 const lightTheme = {
-  bg:`${colors.pink100}`,
+  bg: `${colors.pink100}`,
   bgDark: `${colors.white000}`,
-  color: `${colors.grey900}`,
-  accent: `${colors.pink600}`,
+  color: `${colors.pink900}`,
+  accent: `${colors.pink500}`,
 }
 
 const darkTheme = {
-  bg: `${colors.grey900}`,
-  bgDark: `${colors.grey800}`,
-  color:`${colors.white000}`,
-  accent: `${colors.green500}`,
+  bg: `${colors.blue600}`,
+  bgDark: `${colors.blue700}`,
+  color: `${colors.white000}`,
+  accent: `${colors.pink500}`,
 }
 
 export { lightTheme, darkTheme }

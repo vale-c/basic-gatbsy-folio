@@ -1,12 +1,11 @@
 //theme colors and tints (dark900 to normal500 to light100)
 const colors = {
-  blue900: "#192C4C",
-  blue800: "#2A4A7f",
-  blue700: "#3A67B2",
-  blue600: "#4B84E5",
-  blue500: "#5393FE",
+  blue800: "#010e28",
+  blue700: "#072540",
+  blue600: "#183D5D",
+  blue500: "#0069FF",
   blue400: "#73ABFF",
-  blue300: "#CBDFFF",
+  blue300: "#93C2DB",
   blue200: "#E3EFFF",
   blue100: "#F1F8FF",
 
@@ -31,11 +30,8 @@ const colors = {
   orange200: "#FDE1D9",
   orange100: "#FEF0EC",
 
-  pink900: "#804980",
-  pink800: "#B366B3",
-  pink700: "#CC74CC",
-  pink600: "#E683E6",
-  pink500: "#FF91FF",
+  pink600: "#B366B3",
+  pink500: "#FF8AE2",
   pink400: "#FFA7FF",
   pink300: "#FFC8FF",
   pink200: "#FFFEFF",

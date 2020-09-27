@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import Header from "../Header"
 import { LayoutContainer } from "./styled"
@@ -15,32 +15,39 @@ import Footer from "../Footer"
 
 import GlobalStyles from "../../styles/GlobalStyles"
 
+const Layout = ({ data, children }) => (
+  <>
+    <GlobalStyles />
+    <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <LayoutContainer>
+      <main id="main-content">{children}</main>
+    </LayoutContainer>
+  </>
+)
 
-const Layout = ({ children }) => {
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function MyLayout(props) {
   return (
-    <>
-      <GlobalStyles />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <LayoutContainer>
-        <main id="main-content">{children}</main>
-      </LayoutContainer>
-    </>
+    <StaticQuery
+      query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => <Layout data={data} {...props} />}
+    />
   )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
 }
-
-export default Layout

@@ -8,11 +8,14 @@ import SEO from "./seo"
 const IndexPage = () => (
   <>
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `portfolio`, `react`]} />
+      <SEO
+        title="Home"
+        keywords={[`gatsby`, `portfolio`, `react`, `developer`]}
+      />
       <LandingBio />
       <Image fadeIn />
     </Layout>
-
+    <Footer />
   </>
 )
 

@@ -7,8 +7,9 @@ import Layout from "../components/layout"
 import SEO from "../pages/seo"
 
 const Content = styled.div`
-  max-width: 1280px;
-  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 30px;
   background-color: ${({ theme }) => theme.bg};
 `
 
@@ -22,11 +23,19 @@ const MarkedHeader = styled.h1`
     ${colors.green400} 100%,
     ${colors.purple600}
   );
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `
 
 const HeaderDate = styled.h3`
   margin-top: 10px;
   color: ${({ theme }) => theme.color};
+  @media (max-width: 768px) {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
 `
 
 // STYLE THE TAGS INSIDE THE MARKDOWN HERE
@@ -37,15 +46,20 @@ const MarkdownContent = styled.div`
     background-image: linear-gradient(${colors.grey200}, ${colors.grey200});
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
-    background-position: 0 88%;
+    background-position: 0 90%;
     transition: background-size 0.25s ease-in;
     &:hover {
-      background-size: 100% 88%;
+      background-size: 100% 90%;
     }
   }
 
   a > code:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    font-weight: 400;
   }
 `
 
