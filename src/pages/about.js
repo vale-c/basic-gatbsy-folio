@@ -13,14 +13,14 @@ const About = () => (
     <SEO title="About Me" />
     <AboutWrapper>
       <h1>About me</h1>
-      <h4>
+      <p>
         <i>Hey there!</i>
         <span role="img" aria-label="wave-hand-emoji">
           {" "}
           👋
         </span>
-      </h4>
-      <p>
+      </p>
+      <p className="about">
         My name is Valentina and I am a Front-end Software Engineer specializing
         in Design Systems &{" "}
         <a
@@ -33,7 +33,10 @@ const About = () => (
         .
       </p>
       <p>
-        <em>Disclaimer:</em> I am not a huge fan of "About Me" pages in general,
+        <em>Disclaimer:</em>
+        <br></br>
+        <hr></hr>
+        Although I generally enjoy reading other people's About me pages I don't really like writing about myself (plus I am quite lazy),
         but in case you're curious to get to know me a bit better you can take a
         look at{" "}
         <a
