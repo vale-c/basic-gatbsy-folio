@@ -1,10 +1,10 @@
 import colors from "../styles/colors"
 
 const lightTheme = {
-  bg: `${colors.green100}`,
+  bg: `${colors.purple100}`,
   bgDark: `${colors.white000}`,
-  color: `${colors.green300}`,
-  accent: `${colors.green500}`,
+  color: `${colors.purple300}`,
+  accent: `${colors.purple500}`,
   description: `${colors.grey900}`,
 }
 

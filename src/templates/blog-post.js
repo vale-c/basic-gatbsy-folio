@@ -9,8 +9,8 @@ import SEO from "../pages/seo"
 
 const Content = styled.div`
   margin: 0 auto;
+  padding: 25px;
   max-width: 860px;
-  padding: 30px;
   background-color: ${({ theme }) => theme.bg};
 `
 
@@ -20,8 +20,8 @@ const MarkedHeader = styled.h1`
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    ${colors.blue500},
-    ${colors.green400} 100%,
+    ${colors.purple500},
+    ${colors.purple1000} 100%,
     ${colors.purple600}
   );
   @media (max-width: 768px) {

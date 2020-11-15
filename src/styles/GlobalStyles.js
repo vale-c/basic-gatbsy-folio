@@ -10,16 +10,18 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         background-color: ${({ theme }) => theme.bgDark};
     }
-    *, *:before, *:after {
+    
+    *,
+    *:before, 
+    *:after {
         box-sizing: inherit;
     }
     
     body {
-        font-family: "Chivo", monospace;
+        font-family: 'Poppins', sans-serif;
     }
 
     h1, h2, h3 {
-        font-family: "Changa One", cursive;
         color: ${({ theme }) => theme.accent};
     }
 
@@ -27,8 +29,10 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.description};
     }
 
-    .react-toggle--checked .react-toggle-track,
-    .react-toggle--checked:hover .react-toggle-track {
+    .react-toggle--checked 
+    .react-toggle-track,
+    .react-toggle--checked:hover 
+    .react-toggle-track {
         background-color: ${colors.grey900};
     }
 

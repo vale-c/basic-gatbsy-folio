@@ -18,7 +18,8 @@ export const Content = styled.div`
 
 export const NavLink = styled(Link)`
   color: ${({ theme }) => theme.accent};
-  font-family: "Changa One", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -40,6 +41,10 @@ export const NavLink = styled(Link)`
   :hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none; // to-do: create burger menu!
   }
 `
 
