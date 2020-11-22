@@ -49,3 +49,45 @@ exports.createPages = ({ graphql, actions }) => {
       })
   })
 }
+
+// exports.createPages = async ({ graphql, actions }) => {
+//   const { createPage } = actions
+//   const projectsTemplate = path.resolve(`src/templates/projects.js`)
+
+//   const res = await graphql(`
+//     query {
+//       allMarkdownRemark(
+//         filter: { frontmatter: { category: { eq: "projects" } } }
+//         sort: { fields: frontmatter___date, order: DESC }
+//       ) {
+//         edges {
+//           node {
+//             fields {
+//               slug
+//             }
+//             frontmatter {
+//               title
+//             }
+//           }
+//         }
+//       }
+//     }
+//   `)
+
+//   const posts = res.data.allMarkdownRemark.edges
+
+//   posts.forEach((post, index) => {
+//     const previous = index === posts.length - 1 ? null : posts[index + 1].node
+//     const next = index === 0 ? null : posts[index - 1].node
+
+//     createPage({
+//       path: `${post.node.fields.slug}`,
+//       component: projectsTemplate,
+//       context: {
+//         slug: `${post.node.fields.slug}`,
+//         previous,
+//         next,
+//       },
+//     })
+//   })
+// }

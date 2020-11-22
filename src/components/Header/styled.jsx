@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const Container = styled.header`
+  ${tw`flex flex-wrap max-w-screen-md w-full mx-auto p-5`};
   color: ${({ theme }) => theme.color};
   background-color: ${({ theme }) => theme.bgDark};
   a {
@@ -10,17 +11,16 @@ export const Container = styled.header`
   }
 `
 
-export const Content = styled.div`
-  max-width: 860px;
-  padding: 20px 15px;
-  margin: 0 70px;
+export const HeaderContent = styled.div`
+  ${tw`flex justify-end mx-8 my-2`}
 `
 
 export const NavLink = styled(Link)`
+  ${tw`ml-6`}
   color: ${({ theme }) => theme.accent};
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
-  margin-left: 15px;
+
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -43,21 +43,18 @@ export const NavLink = styled(Link)`
     transform-origin: bottom left;
   }
 
-  @media only screen and (max-width: 768px) {
-    display: none; // to-do: create burger menu!
+  &:nth-child(5) {
+    ${tw`mr-8`}
   }
 `
 
 export const SiteHeader = styled.header`
   background: transparent;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
+  ${tw`flex-wrap max-w-screen-md w-full mx-auto px-2`}
 `
 
 export const ToggleWrapper = styled.div`
+  ${tw`ml-8 -my-1`}
   display: inline-block;
   position: absolute;
-  margin: 0 16px;
-  right: 0;
 `

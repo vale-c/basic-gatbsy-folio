@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
-import colors from './colors'
+import colors from "./colors"
 
 const GlobalStyles = createGlobalStyle`
     // Import normalize.css
@@ -11,14 +11,9 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.bgDark};
     }
     
-    *,
-    *:before, 
-    *:after {
-        box-sizing: inherit;
-    }
-    
     body {
         font-family: 'Poppins', sans-serif;
+        ${tw`m-0 h-screen`}
     }
 
     h1, h2, h3 {

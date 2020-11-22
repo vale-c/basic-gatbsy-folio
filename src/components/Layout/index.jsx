@@ -10,17 +10,15 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "../Header"
-import { LayoutContainer } from "./styled"
+import { MainContent, LayoutContainer } from "./styled"
 import Footer from "../Footer"
-
-import GlobalStyles from "../../styles/GlobalStyles"
 
 const Layout = ({ data, children }) => (
   <>
-    <GlobalStyles />
-    <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
     <LayoutContainer>
-      <main id="main-content">{children}</main>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <MainContent id="main-content">{children}</MainContent>
+      <Footer />
     </LayoutContainer>
   </>
 )

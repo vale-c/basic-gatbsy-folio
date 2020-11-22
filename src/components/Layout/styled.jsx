@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import colors from "../../styles/colors"
+import styled from "styled-components"
 
 export const LayoutContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  ${tw`min-h-screen flex flex-col`};
+`
+export const MainContent = styled.div`
+  ${tw`mb-auto h-10`}
 `

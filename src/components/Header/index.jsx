@@ -1,22 +1,28 @@
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
-import { Container, Content, NavLink, SiteHeader, ToggleWrapper } from './styled'
+import {
+  Container,
+  HeaderContent,
+  NavLink,
+  SiteHeader,
+  ToggleWrapper,
+} from "./styled"
 import Toggle from "../Toggle"
 
 import sun from "../../images/sun.png"
 import moon from "../../images/moon.png"
 import { useTheme } from "../../context/theme-context"
 
-const Header = () =>  {
-  
+const Header = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
     <Container>
       <SiteHeader>
-        <Content>
+        <HeaderContent>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About Me</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink href="https://github.com/vale-c/gatsby-starter-vale">
             GitHub
@@ -49,7 +55,7 @@ const Header = () =>  {
               }}
             />
           </ToggleWrapper>
-        </Content>
+        </HeaderContent>
       </SiteHeader>
     </Container>
   )

@@ -1,7 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import { OuterContainer, Container, NameHeader, Description } from "./styled"
+import Image from "../Image"
+import {
+  Container,
+  ContentWrapper,
+  HeaderTitle,
+  HeaderDescription,
+  ImageWrapper,
+} from "./styled"
 
 const LandingBio = () => (
   <StaticQuery
@@ -16,24 +23,24 @@ const LandingBio = () => (
       }
     `}
     render={data => (
-      <OuterContainer>
-        <Container>
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>{data.site.siteMetadata.subtitle}</Description>
-        </Container>
-      </OuterContainer>
+      <Container>
+        <ContentWrapper>
+          <HeaderTitle>{data.site.siteMetadata.title}</HeaderTitle>
+          <HeaderDescription>
+            {data.site.siteMetadata.subtitle}
+          </HeaderDescription>
+          <ImageWrapper>
+            <Image fadeIn />
+          </ImageWrapper>
+        </ContentWrapper>
+      </Container>
     )}
   />
 )
 
 export default LandingBio
 
-NameHeader.propTypes = {
+HeaderTitle.propTypes = {
   siteTitle: PropTypes.string,
   subtitle: PropTypes.string,
-}
-
-NameHeader.defaultProps = {
-  siteTitle: ``,
-  subtitle: ``,
 }

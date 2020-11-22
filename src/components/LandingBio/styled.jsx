@@ -1,24 +1,22 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  text-align: center;
+  ${tw`flex h-screen justify-center items-center`}
 `
 
-export const OuterContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 80vh;
+export const ContentWrapper = styled.div`
+  ${tw`text-center`}
 `
 
-export const Description = styled.p`
+export const HeaderTitle = styled.h1`
+  ${tw`text-3xl`}
+`
+
+export const HeaderDescription = styled.h4`
+  ${tw`text-xl block`}
   color: ${({ theme }) => theme.description};
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 18px;
 `
 
-export const NameHeader = styled.h1`
-  font-size: 32px;
+export const ImageWrapper = styled.div`
+  ${tw`flex justify-center`}
 `
