@@ -18,7 +18,6 @@ export const HeaderContent = styled.div`
 export const NavLink = styled(Link)`
   ${tw`ml-6`}
   color: ${({ theme }) => theme.accent};
-  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 
   text-decoration: none;
@@ -42,10 +41,6 @@ export const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-
-  &:nth-child(5) {
-    ${tw`mr-8`}
-  }
 `
 
 export const SiteHeader = styled.header`
@@ -54,7 +49,6 @@ export const SiteHeader = styled.header`
 `
 
 export const ToggleWrapper = styled.div`
-  ${tw`ml-8 -my-1`}
+  ${tw`ml-6 -my-1`}
   display: inline-block;
-  position: absolute;
 `

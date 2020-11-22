@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
+import tw from "tailwind.macro"
 import colors from "./colors"
 
 const GlobalStyles = createGlobalStyle`
@@ -9,11 +10,11 @@ const GlobalStyles = createGlobalStyle`
     html {
         box-sizing: border-box;
         background-color: ${({ theme }) => theme.bgDark};
+        font-family: 'Space Mono', monospace;
     }
     
     body {
-        font-family: 'Poppins', sans-serif;
-        ${tw`m-0 h-screen`}
+        ${tw`flex flex-col min-h-screen`}
     }
 
     h1, h2, h3 {

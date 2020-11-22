@@ -1,4 +1,3 @@
-//theme colors and tints (dark900 to normal500 to light100)
 const colors = {
   blue800: "#010e28",
   blue700: "#072540",

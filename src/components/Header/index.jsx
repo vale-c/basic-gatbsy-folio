@@ -9,8 +9,8 @@ import {
 } from "./styled"
 import Toggle from "../Toggle"
 
-import sun from "../../images/sun.png"
-import moon from "../../images/moon.png"
+import sun from "../../assets/images/sun.png"
+import moon from "../../assets/images/moon.png"
 import { useTheme } from "../../context/theme-context"
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
         <HeaderContent>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About Me</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/work">Work</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink href="https://github.com/vale-c/gatsby-starter-vale">
             GitHub

@@ -10,15 +10,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/content`,
+        name: `content`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,6 +34,11 @@ module.exports = {
               aliases: { sh: "bash", js: "javascript" },
               showLineNumbers: true,
             },
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 768,
+              linkImagesToOriginal: false,
+            },
           },
         ],
       },
@@ -45,7 +50,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

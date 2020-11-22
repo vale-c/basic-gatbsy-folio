@@ -9,10 +9,10 @@ export const ContentWrapper = styled.div`
 `
 
 export const HeaderTitle = styled.h1`
-  ${tw`text-3xl`}
+  ${tw`text-4xl`}
 `
 
-export const HeaderDescription = styled.h4`
+export const HeaderDescription = styled.h3`
   ${tw`text-xl block`}
   color: ${({ theme }) => theme.description};
 `
