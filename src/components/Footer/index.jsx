@@ -5,8 +5,7 @@ import { FooterWrapper } from "./styled"
 
 const Footer = ({ children }) => (
   <FooterWrapper>
-    © {new Date().getFullYear()}, Built with ☕ & 💖 by
-    {` `}
+    © {new Date().getFullYear()}, Built with ☕ & 💖 by &nbsp;
     <a
       href="https://www.valentinacalabrese.com"
       target="_blank"
