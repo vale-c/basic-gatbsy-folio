@@ -22,6 +22,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+/* Blog Section */
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.jsx`)
@@ -57,6 +59,45 @@ exports.createPages = async ({ graphql, actions }) => {
       component: blogPostTemplate,
       context: {
         slug: `${post.node.fields.slug}`,
+        previous,
+        next,
+      },
+    })
+  })
+
+  const projectTemplate = path.resolve(`src/templates/Project/index.jsx`)
+  const resp = await graphql(`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "work" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const projects = resp.data.allMarkdownRemark.edges
+
+  projects.forEach((project, index) => {
+    const previous =
+      index === projects.length - 1 ? null : projects[index + 1].node
+    const next = index === 0 ? null : projects[index - 1].node
+
+    createPage({
+      path: `${project.node.fields.slug}`,
+      component: projectTemplate,
+      context: {
+        slug: `${project.node.fields.slug}`,
         previous,
         next,
       },

@@ -13,6 +13,8 @@ import Header from "../Header"
 import { MainContent, LayoutContainer } from "./styled"
 import Footer from "../Footer"
 
+import GlobalStyles from "styles/GlobalStyles"
+
 const Layout = ({ data, children }) => (
   <>
     <LayoutContainer>
@@ -25,18 +27,21 @@ const Layout = ({ data, children }) => (
 
 export default function MyLayout(props) {
   return (
-    <StaticQuery
-      query={graphql`
-        query {
-          site {
-            siteMetadata {
-              title
+    <>
+      <GlobalStyles />
+      <StaticQuery
+        query={graphql`
+          query {
+            site {
+              siteMetadata {
+                title
+              }
             }
           }
-        }
-      `}
-      render={data => <Layout data={data} {...props} />}
-    />
+        `}
+        render={data => <Layout data={data} {...props} />}
+      />
+    </>
   )
 }
 

@@ -8,10 +8,10 @@ import { Container, TitleSection } from "./styled"
 
 import * as Styled from "./styled"
 
-const Posts = () => {
+const Projects = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "blog section" } }) {
+      markdownRemark(frontmatter: { category: { eq: "work section" } }) {
         frontmatter {
           title
           subtitle
@@ -19,7 +19,7 @@ const Posts = () => {
       }
       allMarkdownRemark(
         filter: {
-          frontmatter: { category: { eq: "blog" }, published: { eq: true } }
+          frontmatter: { category: { eq: "work" }, published: { eq: true } }
         }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
@@ -49,18 +49,13 @@ const Posts = () => {
     }
   `)
 
-  const blogSectionTitle = markdownRemark.frontmatter
-  const posts = allMarkdownRemark.edges
+  const projects = allMarkdownRemark.edges
 
   return (
     <Container section>
-      <TitleSection
-        title={blogSectionTitle.title}
-        subtitle={blogSectionTitle.subtitle}
-        center
-      />
-      <Styled.Posts>
-        {posts.map(item => {
+      <TitleSection center />
+      <Styled.Projects>
+        {projects.map(item => {
           const {
             id,
             fields: { slug },
@@ -68,7 +63,7 @@ const Posts = () => {
           } = item.node
 
           return (
-            <Styled.Post key={id}>
+            <Styled.Project key={id}>
               <Link to={slug}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -91,12 +86,12 @@ const Posts = () => {
                   </Styled.Card>
                 </motion.div>
               </Link>
-            </Styled.Post>
+            </Styled.Project>
           )
         })}
-      </Styled.Posts>
+      </Styled.Projects>
     </Container>
   )
 }
 
-export default Posts
+export default Projects
