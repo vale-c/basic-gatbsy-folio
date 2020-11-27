@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "../Image"
+import Container from "../UI/Container"
 import {
-  Container,
   ContentWrapper,
   HeaderTitle,
   HeaderDescription,

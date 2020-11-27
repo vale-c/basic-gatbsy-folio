@@ -2,11 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Link from "gatsby-link"
 
-import Layout from "../../components/Layout"
+import Layout from "components/Layout"
 import SEO from "../../pages/seo"
-import FormatHtml from "../../components/FormatHtml"
+import Container from "components/UI/Container"
+import TitleSection from "components/UI/TitleSection"
+import FormatHtml from "components/FormatHtml"
 
-import { Links, Container, TitleSection } from "./styled"
+import * as Styled from "./styled"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -21,7 +23,7 @@ const BlogPost = ({ data, pageContext }) => {
           subtitle={post.frontmatter.title}
         />
         <FormatHtml content={post.html} />
-        <Links>
+        <Styled.Links>
           <span>
             {previous && (
               <Link to={previous.fields.slug} rel="previous">
@@ -36,7 +38,7 @@ const BlogPost = ({ data, pageContext }) => {
               </Link>
             )}
           </span>
-        </Links>
+        </Styled.Links>
       </Container>
     </Layout>
   )

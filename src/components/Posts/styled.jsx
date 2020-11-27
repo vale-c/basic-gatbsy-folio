@@ -38,12 +38,3 @@ export const Tags = styled.div`
 export const Tag = styled.span`
   ${tw`text-xs text-indigo-900 border border-teal-400 rounded-full px-2 py-1 mr-2`}
 `
-
-export const Container = styled.div`
-  ${tw`flex flex-wrap max-w-screen-md w-full mx-auto p-5`};
-  ${({ section }) => section && tw`py-8 sm:py-16`};
-`
-
-export const TitleSection = styled.div`
-  ${tw`flex flex-col w-full`};
-`

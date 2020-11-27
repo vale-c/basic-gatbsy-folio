@@ -4,7 +4,8 @@ import Img from "gatsby-image"
 import Link from "gatsby-link"
 import { motion } from "framer-motion"
 
-import { Container, TitleSection } from "./styled"
+import Container from "components/UI/Container"
+import TitleSection from "components/UI/TitleSection"
 
 import * as Styled from "./styled"
 

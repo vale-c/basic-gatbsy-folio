@@ -1,11 +1,7 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
-  ${tw`flex h-screen justify-center items-center`}
-`
-
 export const ContentWrapper = styled.div`
-  ${tw`text-center`}
+  ${tw`m-auto text-center`}
 `
 
 export const HeaderTitle = styled.h1`

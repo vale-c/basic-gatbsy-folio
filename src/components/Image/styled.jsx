@@ -1,5 +1,6 @@
 import Img from "gatsby-image"
 import styled from "styled-components"
+import tw from "tailwind.macro"
 
 export const StyledImage = styled(Img)`
   &:hover {

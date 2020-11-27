@@ -1,8 +1,6 @@
 import styled from "styled-components"
+import tw from "tailwind.macro"
 
-export const LayoutContainer = styled.div`
-  ${tw`min-h-screen flex flex-col`};
-`
-export const MainContent = styled.div`
-  ${tw`flex-grow`}
+export const Layout = styled.main`
+  ${tw`flex flex-col min-h-screen`};
 `

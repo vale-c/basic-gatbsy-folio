@@ -69,6 +69,19 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-tailwindcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`tailwindcss`)],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        purgeOnly: [`src/styles/tailwind.css`],
+      },
+    },
     `styled-modern-normalize`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

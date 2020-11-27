@@ -1,14 +1,8 @@
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
-import {
-  Container,
-  HeaderContent,
-  NavLink,
-  SiteHeader,
-  ToggleWrapper,
-} from "./styled"
+import { HeaderContent, NavLink, SiteHeader, ToggleWrapper } from "./styled"
 import Toggle from "../Toggle"
-
+import Container from "../UI/Container"
 import sun from "../../assets/images/sun.png"
 import moon from "../../assets/images/moon.png"
 import { useTheme } from "../../context/theme-context"
