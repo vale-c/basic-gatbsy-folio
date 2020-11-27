@@ -1,7 +1,7 @@
 import React from "react"
 import LandingBio from "../components/LandingBio"
 import Layout from "../components/Layout"
-import SEO from "./seo"
+import SEO from "../components/SEO"
 
 const IndexPage = () => (
   <>

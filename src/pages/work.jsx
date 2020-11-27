@@ -2,25 +2,33 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import SEO from "./seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import Projects from "../components/Projects"
+import tw from "tailwind.macro"
 
 const WorkWrapper = styled.div`
-  padding: 0 50px;
+  ${tw`m-4`}
+`
+const Title = styled.h1`
+  ${tw`text-3xl font-bold text-center mt-8`}
+`
+
+const Subtitle = styled.h3`
+  ${tw`text-center my-2 text-grey-darker`}
+`
+const StyledLink = styled(Link)`
+  ${tw`ml-8 my-2 font-bold hover:underline`}
 `
 
 const Work = () => (
   <WorkWrapper>
     <Layout>
       <SEO title="Work" />
-      <h1>Projects</h1>
-      <h4>
-        <i>Hey there!</i>
-      </h4>
-      <p>Here you can take a look at some of my personal side-projects.</p>
+      <Title>Personal Projects</Title>
+      <Subtitle>Here you can take a look at some of my side-projects.</Subtitle>
       <Projects />
-      <Link to="/">🔙 to Home</Link>
+      <StyledLink to="/">🔙 Home</StyledLink>
     </Layout>
   </WorkWrapper>
 )

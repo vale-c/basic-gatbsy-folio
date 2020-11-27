@@ -49,6 +49,6 @@ export const SiteHeader = styled.header`
 `
 
 export const ToggleWrapper = styled.div`
-  ${tw`ml-6 -my-1`}
+  ${tw`ml-5 -my-1`}
   display: inline-block;
 `

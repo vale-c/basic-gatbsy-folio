@@ -10,7 +10,7 @@ export const Project = styled.div`
 `
 
 export const Card = styled.div`
-  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-300`};
+  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-600`};
 `
 
 export const Content = styled.div`
