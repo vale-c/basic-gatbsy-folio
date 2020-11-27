@@ -4,24 +4,26 @@ import Link from "gatsby-link"
 
 import Layout from "../../components/Layout"
 import SEO from "../../pages/seo"
-import FormatHtml from "../../components/FormatHtml"
+import Container from "components/UI/Container"
+import TitleSection from "components/UI/TitleSection"
+import FormatHtml from "components/FormatHtml"
 
-import { Links, Container, TitleSection } from "./styled"
+import * as Styled from "./styled"
 
 const Project = ({ data, pageContext }) => {
-  const post = data.markdownRemark
+  const project = data.markdownRemark
   const { previous, next } = pageContext
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO title={project.frontmatter.title} />
       <Container section>
         <TitleSection
-          title={post.frontmatter.date}
-          subtitle={post.frontmatter.title}
+          title={project.frontmatter.date}
+          subtitle={project.frontmatter.title}
         />
-        <FormatHtml content={post.html} />
-        <Links>
+        <FormatHtml content={project.html} />
+        <Styled.Links>
           <span>
             {previous && (
               <Link to={previous.fields.slug} rel="previous">
@@ -36,7 +38,7 @@ const Project = ({ data, pageContext }) => {
               </Link>
             )}
           </span>
-        </Links>
+        </Styled.Links>
       </Container>
     </Layout>
   )

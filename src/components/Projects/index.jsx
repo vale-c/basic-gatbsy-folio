@@ -50,11 +50,16 @@ const Projects = () => {
     }
   `)
 
+  const projectSectionTitle = markdownRemark.frontmatter
   const projects = allMarkdownRemark.edges
 
   return (
     <Container section>
-      <TitleSection center />
+      <TitleSection
+        title={projectSectionTitle.title}
+        subtitle={projectSectionTitle.subtitle}
+        center
+      />
       <Styled.Projects>
         {projects.map(item => {
           const {
