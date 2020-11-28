@@ -53,3 +53,7 @@ export const ToggleWrapper = styled.div`
   ${tw`ml-6 -my-1`}
   display: inline-block;
 `
+
+export const Wrapper = styled.div`
+  ${tw`px-24`}
+`

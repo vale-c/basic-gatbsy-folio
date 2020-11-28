@@ -2,7 +2,7 @@ import styled from "styled-components"
 import tw from "tailwind.macro"
 
 export const TitleSection = styled.div`
-  ${tw`flex flex-col w-full`};
+  ${tw`flex flex-col w-full text-3xl`};
 `
 
 export const Title = styled.h1`
@@ -11,7 +11,7 @@ export const Title = styled.h1`
 `
 
 export const SubTitle = styled.h3`
-  ${tw`text-xs text-indigo-600 w-full text-left`};
+  ${tw`text-sm w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `
 

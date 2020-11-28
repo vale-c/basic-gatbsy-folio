@@ -6,6 +6,7 @@ import Container from "../UI/Container"
 import sun from "../../assets/images/sun.png"
 import moon from "../../assets/images/moon.png"
 import { useTheme } from "../../context/theme-context"
+import { Wrapper } from "./styled"
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
@@ -13,6 +14,7 @@ const Header = () => {
   return (
     <Container>
       <SiteHeader>
+      <Wrapper>
         <HeaderContent>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About Me</NavLink>
@@ -50,6 +52,7 @@ const Header = () => {
             />
           </ToggleWrapper>
         </HeaderContent>
+        </Wrapper>
       </SiteHeader>
     </Container>
   )

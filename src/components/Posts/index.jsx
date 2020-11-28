@@ -4,10 +4,11 @@ import Img from "gatsby-image"
 import Link from "gatsby-link"
 import { motion } from "framer-motion"
 
-import Container from "components/UI/Container"
-import TitleSection from "components/UI/TitleSection"
+import Container from "../UI/Container"
+import TitleSection from "../UI/TitleSection"
 
 import * as Styled from "./styled"
+import { Wrapper } from "./styled"
 
 const Posts = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
@@ -55,6 +56,7 @@ const Posts = () => {
 
   return (
     <Container section>
+      <Wrapper>
       <TitleSection
         title={blogSectionTitle.title}
         subtitle={blogSectionTitle.subtitle}
@@ -96,6 +98,7 @@ const Posts = () => {
           )
         })}
       </Styled.Posts>
+      </Wrapper>
     </Container>
   )
 }

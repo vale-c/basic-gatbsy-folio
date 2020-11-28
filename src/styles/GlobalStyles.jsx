@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
         ${tw`flex flex-col min-h-screen`}
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6, a {
         font-family: 'Expletus Sans', monospace;
         color: ${({ theme }) => theme.fontAccent};
     }
@@ -22,16 +22,11 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.description};
     }
 
-    a {
-        color: ${({ theme }) => theme.fontAccent};
-        font-family: 'Expletus Sans', monospace;
-    }
-
     .react-toggle--checked 
     .react-toggle-track,
     .react-toggle--checked:hover 
     .react-toggle-track {
-        background-color: ${theme.underlineAccent};
+        background-color: ${({ theme }) => theme.toggle};
     }
 `
 

@@ -36,8 +36,9 @@ module.exports = {
             },
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 768,
+              maxWidth: 590,
               linkImagesToOriginal: false,
+              quality: 100,
             },
           },
         ],
@@ -82,7 +83,6 @@ module.exports = {
         purgeOnly: [`src/styles/tailwind.css`],
       },
     },
-    `styled-modern-normalize`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

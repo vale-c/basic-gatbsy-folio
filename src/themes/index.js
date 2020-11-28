@@ -5,6 +5,7 @@ const lightTheme = {
   fontAccent: defaultColors["indigo"],
   underlineAccent: defaultColors["indigo-lighter"],
   description: defaultColors["grey-darkest"],
+  toggle: defaultColors["grey-light"],
 }
 
 const darkTheme = {
@@ -12,6 +13,7 @@ const darkTheme = {
   fontAccent: defaultColors["green-light"],
   underlineAccent: defaultColors["green-lighter"],
   description: defaultColors["white"],
+  toggle: defaultColors["grey-darkest"],
 }
 
 export { lightTheme, darkTheme }
