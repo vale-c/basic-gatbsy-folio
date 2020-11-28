@@ -18,27 +18,29 @@ const Project = ({ data, pageContext }) => {
     <Layout>
       <SEO title={project.frontmatter.title} />
       <Container section>
-        <TitleSection
-          title={project.frontmatter.date}
-          subtitle={project.frontmatter.title}
-        />
-        <FormatHtml content={project.html} />
-        <Styled.Links>
-          <span>
-            {previous && (
-              <Link to={previous.fields.slug} rel="previous">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </span>
-          <span>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </span>
-        </Styled.Links>
+        <Styled.Wrapper>
+          <TitleSection
+            title={project.frontmatter.date}
+            subtitle={project.frontmatter.title}
+          />
+          <FormatHtml content={project.html} />
+          <Styled.Links>
+            <span>
+              {previous && (
+                <Link to={previous.fields.slug} rel="previous">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </span>
+            <span>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </span>
+          </Styled.Links>
+        </Styled.Wrapper>
       </Container>
     </Layout>
   )

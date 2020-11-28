@@ -13,7 +13,7 @@ const darkTheme = {
   fontAccent: defaultColors["green-light"],
   underlineAccent: defaultColors["green-lighter"],
   description: defaultColors["white"],
-  toggle: defaultColors["grey-darkest"],
+  toggle: defaultColors["black"],
 }
 
 export { lightTheme, darkTheme }

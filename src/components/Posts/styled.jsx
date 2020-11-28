@@ -10,7 +10,8 @@ export const Post = styled.div`
 `
 
 export const Card = styled.div`
-  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-600`};
+  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden`};
+  border: 1px solid ${({ theme }) => theme.fontAccent};
 `
 
 export const Content = styled.div`

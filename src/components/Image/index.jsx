@@ -16,7 +16,7 @@ import { StyledImage } from "./styled"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "bitmoji.png" }) {
+      placeholderImage: file(relativePath: { eq: "bitmojis/vale-bitmoji-home.png" }) {
         childImageSharp {
           fixed(width: 300, height: 300) {
             ...GatsbyImageSharpFixed

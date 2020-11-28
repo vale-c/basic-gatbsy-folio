@@ -15,10 +15,10 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.h3`
-  ${tw`text-center my-2 text-grey-darker`}
+  ${tw`text-center my-2 text-grey-light`}
 `
 const StyledLink = styled(Link)`
-  ${tw`ml-8 my-2 font-bold hover:underline`}
+  ${tw`ml-12 my-2 font-bold hover:underline`}
 `
 
 const Work = () => (
@@ -26,7 +26,7 @@ const Work = () => (
     <Layout>
       <SEO title="Work" />
       <Title>Personal Projects</Title>
-      <Subtitle>Here you can take a look at some of my side-projects.</Subtitle>
+      <Subtitle>Check out some of my side-projects.</Subtitle>
       <Projects />
       <StyledLink to="/">🔙 Home</StyledLink>
     </Layout>

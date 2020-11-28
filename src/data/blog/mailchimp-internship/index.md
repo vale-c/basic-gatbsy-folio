@@ -10,7 +10,11 @@ published: true
 
 **12 incredible Weeks as a UX Designer Intern**
 
+<br/>
+
 ![Mailchimp Internship](./mailchimp-internship-cover.jpg)
+
+<br/>
 
 There would be so many things and anecdotes to talk about which contributed to making my internship experience at Mailchimp truly unique.
 

@@ -12,3 +12,6 @@ export const Image = styled.figure`
 export const Links = styled.div`
   ${tw`w-full flex justify-between mt-10 font-bold hover:underline`};
 `
+export const Wrapper = styled.div`
+  ${tw`px-12`}
+`
