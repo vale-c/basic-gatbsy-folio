@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Valentina`,
-    subtitle: `Front-end Software Engineer`,
+    subtitle: `Front-end Software Engineer & Designer`,
     description: `A custom portfolio/blog built with Gatsbyjs.`,
     author: `@vale-c`,
   },

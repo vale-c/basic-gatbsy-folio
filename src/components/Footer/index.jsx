@@ -5,13 +5,13 @@ import { FooterWrapper } from "./styled"
 
 const Footer = ({ children }) => (
   <FooterWrapper>
-    © {new Date().getFullYear()}, Built with ☕ & 💖 by &nbsp;
+    © {new Date().getFullYear()}, Built with ☕ & 💖 by 
     <a
       href="https://www.valentinacalabrese.com"
       target="_blank"
       rel="noopener noreferrer"
     >
-      Vale
+      {` `}Vale
     </a>
   </FooterWrapper>
 )

@@ -4,9 +4,9 @@ import Link from "gatsby-link"
 
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-import Container from "components/UI/Container"
-import TitleSection from "components/UI/TitleSection"
-import FormatHtml from "components/FormatHtml"
+import Container from "../../components/UI/Container"
+import TitleSection from "../../components/UI/TitleSection"
+import FormatHtml from "../../components/FormatHtml"
 
 import * as Styled from "./styled"
 

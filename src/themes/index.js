@@ -1,18 +1,16 @@
 import { colors as defaultColors } from "../../tailwind"
 
 const lightTheme = {
-  bg: defaultColors["indigo"],
-  bgDark: defaultColors["grey-lightest"],
-  color: defaultColors["indigo-darker"],
-  accent: defaultColors["indigo-light"],
-  description: defaultColors["gray-light"],
+  backgroundColor: defaultColors["grey-lighter"],
+  fontAccent: defaultColors["indigo"],
+  underlineAccent: defaultColors["indigo-lighter"],
+  description: defaultColors["grey-darkest"],
 }
 
 const darkTheme = {
-  bg: defaultColors["blue-dark"],
-  bgDark: defaultColors["blue-darker"],
-  color: defaultColors["pink-lighter"],
-  accent: defaultColors["pink-light"],
+  backgroundColor: defaultColors["blue-darkest"],
+  fontAccent: defaultColors["green-light"],
+  underlineAccent: defaultColors["green-lighter"],
   description: defaultColors["white"],
 }
 

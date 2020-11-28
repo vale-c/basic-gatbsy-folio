@@ -18,6 +18,7 @@ export const HeaderContent = styled.div`
 export const NavLink = styled(Link)`
   ${tw`ml-6`}
   color: ${({ theme }) => theme.accent};
+  font-weight: 700;
   letter-spacing: 2px;
 
   text-decoration: none;
@@ -25,7 +26,7 @@ export const NavLink = styled(Link)`
   position: relative;
 
   ::after {
-    background-color: ${({ theme }) => theme.color};
+    background-color: ${({ theme }) => theme.underlineAccent};
     content: "";
     position: absolute;
     width: 100%;
@@ -49,6 +50,6 @@ export const SiteHeader = styled.header`
 `
 
 export const ToggleWrapper = styled.div`
-  ${tw`ml-5 -my-1`}
+  ${tw`ml-6 -my-1`}
   display: inline-block;
 `

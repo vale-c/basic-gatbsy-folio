@@ -18,7 +18,7 @@ const Header = () => {
           <NavLink to="/about">About Me</NavLink>
           <NavLink to="/work">Work</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-          <NavLink href="https://github.com/vale-c/gatsby-starter-vale">
+          <NavLink href="https://github.com/vale-c/">
             GitHub
           </NavLink>
           <ToggleWrapper>
