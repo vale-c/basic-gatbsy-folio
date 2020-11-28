@@ -8,18 +8,26 @@ tags: ['JavaScript', 'React']
 published: true
 ---
 
-_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat._.
 
-**Sed ut perspiciatis unde omnis**
+**12 incredible Weeks as a UX Designer Intern**
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+<br/><br/>
 
-![Aliquet vel mollis nec](./cover.jpg)
+![Mailchimp Internship](./cover.jpg)
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+<br/><br/>
+There would be so many things and anecdotes to talk about which contributed to making my internship experience at Mailchimp truly unique.<br/><br/>
 
-**Sliquam quaerat voluptatems**
+And a simple blog post cannot capture all the magic concentrated in the span of *12 weeks*, so I am just going to highlight a few key aspects that made this summer absolutely unforgettable.<br/><br/>
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Working with the Design System team as a UX Engineer has been such an exciting part of my journey to Atlanta, and it made me understand about how important it is to have a great sense of team work and cooperation when starting to conceptualise the building blocks of a whole new Design System.<br/><br/>
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+As a matter of fact, having a clear sense of *direction* and a *vision* is not enough, as the mission of a *Design System* team is to standardise and make the visual elements of a User Experience fully accessible, well-documented and completely in-line with the company vision and strategy.<br/><br/>
+
+It is no easy task, believe me.<br/><br/>
+
+But that’s part and parcel of the fun of it.<br/><br/>
+
+Using the latest technologies and frameworks to bring to life the *User Interface* of a product is such a great and *empowering* feeling, and being able to actively contribute to the various discussions with the team and receiving feedback along the way, makes the whole process so much smoother and enjoyable.<br/><br/>
+
+I feel so **lucky** to have had this opportunity to work with such *talented people*, and every day felt like a whole new chapter to continue *being inspired* and motivated to see things grow and change.

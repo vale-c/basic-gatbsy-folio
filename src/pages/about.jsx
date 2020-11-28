@@ -10,7 +10,8 @@ const AboutWrapper = styled.div`
 `
 
 const Greeting = styled.h4`
-  ${tw`text-xl text-green-lighter`}
+  ${tw`text-xl`}
+  color: ${({ theme }) => theme.fontAccent};
 `
 
 const Title = styled.h1`
