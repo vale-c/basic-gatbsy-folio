@@ -1,4 +1,4 @@
-import { colors as defaultColors } from "../../tailwind"
+import { colors as defaultColors } from "../styles/colors"
 
 const lightTheme = {
   backgroundColor: defaultColors["grey-lighter"],

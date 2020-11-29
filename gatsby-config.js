@@ -36,9 +36,9 @@ module.exports = {
             },
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 590,
+              maxWidth: 768,
               linkImagesToOriginal: false,
-              quality: 100,
+              quality: 85,
             },
           },
         ],
@@ -80,6 +80,8 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
+        printRejected: false,
+        develop: false,
         purgeOnly: [`src/styles/tailwind.css`],
       },
     },
