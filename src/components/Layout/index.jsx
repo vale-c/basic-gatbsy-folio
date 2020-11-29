@@ -10,9 +10,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { motion, AnimatePresence } from "framer-motion"
 
-import Header from "../Header"
-import * as Styled from "./styled"
+import HeaderNav from "../HeaderNav"
 import Footer from "../Footer"
+
+import * as Styled from "./styled"
 
 import GlobalStyles from "styles/GlobalStyles"
 
@@ -21,7 +22,7 @@ const Layout = ({ data, children }) => (
     <GlobalStyles />
     <AnimatePresence exitBeforeEnter>
       <Styled.Layout>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <HeaderNav siteTitle={data.site.siteMetadata?.title || `Title`} />
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

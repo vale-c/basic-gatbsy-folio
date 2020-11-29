@@ -6,16 +6,18 @@ export const TitleSection = styled.div`
 `
 
 export const Title = styled.h1`
-  ${tw`uppercase mb-4 text-lg font-bold w-full text-left`};
+  ${tw`uppercase mb-4 text-2xl font-bold w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `
 
 export const SubTitle = styled.h3`
-  ${tw`text-sm w-full text-left`};
+  color: ${({ theme }) => theme.description};
+  ${tw`text-2xl w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `
 
 export const Separator = styled.h2`
+  color: ${({ theme }) => theme.fontAccent};
   ${tw`relative w-2 h-8 mb-6 -mt-2`};
   ${({ center }) => center && tw`mx-auto`};
 

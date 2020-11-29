@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import tw from "tailwind.macro"
 
@@ -48,36 +48,51 @@ const About = () => (
       </Subtitle>
       <StyledText>
         <p>
-        My name is <b>Valentina</b> and I am a Front-end Software Engineer with a knack for
-        <a
-          href="https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6"
-          target="_blank"
-          rel="noopener noreferrer"
-        > Design Systems </a> & a special interest in {" "}
-        <a
-          href="https://en.wikipedia.org/wiki/User-centered_design"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          UCD
-        </a>
-        .
-        <Spacer />
-        Disclaimer:
-        <Spacer />
-        Although I generally enjoy reading other people's About me pages I don't
-        really like writing a lot about myself <i>(also I am quite
-        <a href="https://media.giphy.com/media/4KkSbPnZ5Skec/giphy.gif" target="_blank"
-          rel="noopener noreferrer"> lazy</a></i> 😅), so in case
-        you're curious to learn something more about my personality you can take a look at{" "}
-        <a
-          href="https://www.16personalities.com/profiles/c467796fe658b"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          this
-        </a>
-        .
+          My name is <b>Valentina</b> and I am a Front-end Software Engineer
+          with a knack for
+          <a
+            href="https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Design Systems{" "}
+          </a>{" "}
+          & a special interest in{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/User-centered_design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            UCD
+          </a>
+          .
+          <Spacer />
+          Disclaimer:
+          <Spacer />
+          Although I generally enjoy reading other people's About me pages I
+          don't really like writing a lot about myself{" "}
+          <i>
+            (also I am quite
+            <a
+              href="https://media.giphy.com/media/4KkSbPnZ5Skec/giphy.gif"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              lazy
+            </a>
+          </i>{" "}
+          😅), so in case you're curious to learn something more about my
+          personality you can take a look at{" "}
+          <a
+            href="https://www.16personalities.com/profiles/c467796fe658b"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            this
+          </a>
+          .
         </p>
       </StyledText>
       <StyledLink to="/">

@@ -15,7 +15,8 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.h3`
-  ${tw`text-center my-2 text-grey-light`}
+  ${tw`text-center my-2`}
+  color: ${({ theme }) => theme.description}
 `
 const StyledLink = styled(Link)`
   ${tw`ml-12 my-2 font-bold hover:underline`}

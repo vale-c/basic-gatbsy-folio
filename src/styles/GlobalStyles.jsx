@@ -9,7 +9,6 @@ const GlobalStyles = createGlobalStyle`
     
     body {
         font-family: 'Montserrat', monospace;
-        ${tw`flex flex-col min-h-screen`}
     }
 
     h1, h2, h3, h4, h5, h6, a {
