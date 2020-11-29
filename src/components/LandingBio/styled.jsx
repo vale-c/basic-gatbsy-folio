@@ -9,7 +9,8 @@ export const HeaderTitle = styled.h1`
 `
 
 export const HeaderDescription = styled.h3`
-  ${tw`text-xl block`}
+  font-family: 'Nunito', sans-serif;
+  ${tw`text-2xl block`}
   color: ${({ theme }) => theme.description};
 `
 

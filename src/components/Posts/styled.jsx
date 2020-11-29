@@ -22,22 +22,24 @@ export const Image = styled.figure`
   ${tw`w-full`};
 `
 
+export const Date = styled.h3`
+  ${tw`text-xs`};
+  color: ${({ theme }) => theme.description};
+`
+
 export const Title = styled.h3`
-  ${tw`font-semibold mb-4`};
+  ${tw`text-md font-semibold mb-4`};
 `
 
 export const Description = styled.p``
-
-export const Date = styled.h3`
-  ${tw`text-xs text-indigo-500`};
-`
 
 export const Tags = styled.div`
   ${tw`p-4 pt-2 mt-auto`}
 `
 
 export const Tag = styled.span`
-  ${tw`text-xs font-bold text-indigo-900 rounded-full px-2 py-1 mr-2`}
+  color: ${({ theme }) => theme.description};
+  ${tw`text-xs font-bold rounded-full px-2 py-1 mr-2`}
   border: 1px solid ${({ theme }) => theme.fontAccent};
 `
 

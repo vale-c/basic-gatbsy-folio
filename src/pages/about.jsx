@@ -11,7 +11,7 @@ const AboutWrapper = styled.div`
 
 const Greeting = styled.h4`
   ${tw`text-xl`}
-  color: ${({ theme }) => theme.fontAccent};
+  color: ${({ theme }) => theme.description};
 `
 
 const Title = styled.h1`

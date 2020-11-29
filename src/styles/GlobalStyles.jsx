@@ -7,17 +7,13 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.backgroundColor};
     }
     
-    body {
-        font-family: 'Montserrat', monospace;
-    }
-
     h1, h2, h3, h4, h5, h6, a {
-        font-family: 'Expletus Sans', monospace;
+        font-family: 'Poppins', sans-serif;
         color: ${({ theme }) => theme.fontAccent};
     }
 
     p {
-        font-family: 'Expletus Sans', monospace;
+        font-family: 'Nunito', sans-serif;
         color: ${({ theme }) => theme.description};
     }
 
