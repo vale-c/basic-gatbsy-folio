@@ -4,6 +4,9 @@ import colors from "../../tailwind"
 const GlobalStyles = createGlobalStyle`
     html {
         box-sizing: border-box;
+    }
+
+    body {
         background-color: ${({ theme }) => theme.backgroundColor};
     }
     
