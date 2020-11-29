@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { useTheme } from "../../context/theme-context"
 import colors from "../../tailwind"
 
 const GlobalStyles = createGlobalStyle`
