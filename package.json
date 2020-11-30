@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-vale",
+  "name": "gatsby-folio-vale",
   "private": true,
-  "description": "My Personal Blog",
+  "description": "Vale's Tech Blog",
   "version": "0.1.0",
   "author": "Vale Calabrese <valent95@gmail.com>",
   "dependencies": {
