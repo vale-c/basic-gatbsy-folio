@@ -4,7 +4,11 @@ import { ThemeProvider as BaseThemeProvider } from "styled-components"
 import { useLocalStorage } from "../hooks/useLocalStorage"
 import { lightTheme, darkTheme } from "../themes"
 
-const ThemeContext = createContext()
+const ThemeContext = createContext({
+  state: {
+    /* your initial store */
+  },
+})
 
 const ThemeProvider = ({ children }) => {
   const [themeString, setThemeString] = useLocalStorage("theme", "light")
