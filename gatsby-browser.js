@@ -5,8 +5,8 @@ import "./css-utils/prism-atom-dark.css"
 import "./css-utils/prism-line-numbers.css"
 
 import "./src/styles/tailwind.css"
-import "./src/styles/GlobalStyles"
-import GlobalStyles from "./src/styles/GlobalStyles"
+
+import GlobalStyles from "./src/themes/GlobalStyles"
 
 // trigger an immediate page refresh when an update is found
 export const onServiceWorkerUpdateReady = () => window.location.reload()

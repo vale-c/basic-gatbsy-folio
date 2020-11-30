@@ -5,9 +5,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage"
 import { lightTheme, darkTheme } from "../themes"
 
 const ThemeContext = createContext({
-  state: {
-    /* your initial store */
-  },
+  state: {},
 })
 
 const ThemeProvider = ({ children }) => {
