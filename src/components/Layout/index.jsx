@@ -15,11 +15,8 @@ import Footer from "../Footer"
 
 import * as Styled from "./styled"
 
-import GlobalStyles from "../../themes/GlobalStyles"
-
 const Layout = ({ data, children }) => (
   <>
-    <GlobalStyles />
     <AnimatePresence exitBeforeEnter>
       <Styled.Layout>
         <HeaderNav siteTitle={data.site.siteMetadata?.title || `Title`} />

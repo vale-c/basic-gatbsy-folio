@@ -6,11 +6,14 @@ import "./css-utils/prism-line-numbers.css"
 
 import "./src/styles/tailwind.css"
 
+import GlobalStyles from "./src/themes/GlobalStyles"
+
 // trigger an immediate page refresh when an update is found
 export const onServiceWorkerUpdateReady = () => window.location.reload()
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider>
+    <GlobalStyles />
     <>{element}</>
   </ThemeProvider>
 )
