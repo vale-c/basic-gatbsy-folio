@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 import { theme } from "../context/theme-context"
-import colors from "../styles/colors"
+import colors from "./colors"
 
-const GlobalStyles = createGlobalStyle`
+export default createGlobalStyle`
     html {
         box-sizing: border-box;
     }
@@ -28,5 +28,3 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.toggle};
     }
 `
-
-export default GlobalStyles

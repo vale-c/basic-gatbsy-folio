@@ -6,6 +6,8 @@ tags: ['React.js', 'API']
 published: true
 ---
 
+![CityStatsApp](./citystats-content.png)
+
 <br><br/>
 I built this Web Application with **React.js**.
 <br><br/>

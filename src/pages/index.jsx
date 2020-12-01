@@ -1,8 +1,8 @@
-import React from "react"
-import LandingBio from "../components/LandingBio"
-import Layout from "../components/Layout"
-import Posts from "../components/Posts"
-import SEO from "../components/SEO"
+import React from 'react'
+import LandingBio from '../components/LandingBio'
+import Layout from '../components/Layout'
+import Projects from '../components/Projects'
+import SEO from '../components/SEO'
 
 const IndexPage = () => (
   <>
@@ -12,7 +12,7 @@ const IndexPage = () => (
         keywords={[`gatsby`, `portfolio`, `react`, `developer`]}
       />
       <LandingBio />
-      <Posts />
+      <Projects />
     </Layout>
   </>
 )

@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import tw from "tailwind.macro"
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const Title = styled.h3`
-  ${tw`font-semibold mb-4`};
+  ${tw`font-semibold mb-4 text-center`};
 `
 
 export const Image = styled.figure`
@@ -10,7 +10,7 @@ export const Image = styled.figure`
 `
 
 export const Links = styled.div`
-  ${tw`w-full flex justify-between mt-10`};
+  ${tw`w-full flex justify-between mt-10 -mx-4`};
 `
 export const Wrapper = styled.div`
   ${tw`px-12`}

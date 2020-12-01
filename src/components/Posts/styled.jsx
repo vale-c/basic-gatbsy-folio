@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import tw from "tailwind.macro"
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const Posts = styled.div`
   ${tw`w-full flex flex-wrap`};
 `
 
 export const Post = styled.div`
-  ${tw`w-full sm:w-1/2 p-3`};
+  ${tw`w-full sm:w-1/2 sm:flex-col p-3`};
 `
 
 export const Card = styled.div`

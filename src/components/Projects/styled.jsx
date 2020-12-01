@@ -1,40 +1,41 @@
-import styled from "styled-components"
-import tw from "tailwind.macro"
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const Projects = styled.div`
-  ${tw`w-full flex flex-wrap`};
+  ${tw`flex flex-wrap justify-between -mx-6`};
 `
 
 export const Project = styled.div`
-  ${tw`w-full sm:w-1/2 p-3`};
+  ${tw`w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink`};
 `
 
 export const Card = styled.div`
-  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-600`};
+  border: 2px solid ${({ theme }) => theme.fontAccent};
+  ${tw`flex-1 rounded-lg overflow-hidden shadow-lg`};
 `
 
 export const Content = styled.div`
   ${tw`p-4 text-indigo-900`};
 `
 
-export const Image = styled.figure`
-  ${tw`w-full`};
-`
-
 export const Title = styled.h3`
   ${tw`font-semibold mb-4`};
 `
-
-export const Description = styled.p``
-
-export const Date = styled.h3`
-  ${tw`text-xs text-indigo-500`};
+export const TitleSection = styled.h3`
+  ${tw`font-semibold mb-4`};
 `
+export const Description = styled.p``
 
 export const Tags = styled.div`
   ${tw`p-4 pt-2 mt-auto`}
 `
 
 export const Tag = styled.span`
-  ${tw`text-xs text-indigo-900 border border-teal-400 rounded-full px-2 py-1 mr-2`}
+  color: ${({ theme }) => theme.description};
+  ${tw`text-xs font-bold rounded-full px-2 py-1 mr-2`}
+  border: 1px solid ${({ theme }) => theme.fontAccent};
+`
+
+export const Wrapper = styled.div`
+  ${tw`px-24 m-0`}
 `

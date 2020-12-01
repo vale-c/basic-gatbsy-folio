@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import tw from "tailwind.macro"
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const TerminalContainer = styled.div`
-  ${tw`w-1/2 mx-auto shadow-lg`}
+  ${tw`flex shadow-xl px-12 sm:px-24`}
 `
 
 export const OuterWrapper = styled.div`
@@ -14,7 +14,7 @@ export const TerminalHeader = styled.div`
 `
 
 export const TerminalTitle = styled.div`
-  ${tw`mx-auto pr-16 text-grey-darkest font-bold`}
+  ${tw`mx-auto pr-16 text-grey-darkest font-medium`}
 `
 
 export const CloseButton = styled.div`
@@ -37,8 +37,12 @@ export const TerminalContent = styled.div`
   ${tw`pl-1 pt-1 h-auto`}
 `
 
+export const TContent = styled.p`
+  ${tw`text-lg tracking-widest text-white`}
+`
+
 export const Content = styled.div`
-  ${tw`text-xl font-medium text-white`}
+  ${tw`text-lg font-light text-white`}
 `
 
 export const Paragraph = styled.div`

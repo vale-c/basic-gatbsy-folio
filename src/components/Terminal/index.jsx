@@ -15,7 +15,7 @@ const Terminal = () => {
           <Styled.Paragraph>
             Last login: Wed Sep 25 09:11:04 on ttys002
           </Styled.Paragraph>
-          <Styled.Content>$vale@MacBook-Pro:</Styled.Content>
+          <Styled.TContent>Vale$</Styled.TContent>
           <Styled.Spacer />
           <Styled.Spacer />
           <Styled.Content>

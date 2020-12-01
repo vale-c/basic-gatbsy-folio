@@ -1,14 +1,13 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Link from "gatsby-link"
-import { motion } from "framer-motion"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Link from 'gatsby-link'
+import Img from 'gatsby-image'
+import { motion } from 'framer-motion'
 
-import Container from "../UI/Container"
-import TitleSection from "../UI/TitleSection"
+import TitleSection from '../UI/TitleSection'
 
-import * as Styled from "./styled"
-import { Wrapper } from "./styled"
+import * as Styled from './styled'
+import { Wrapper } from './styled'
 
 const Posts = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
@@ -55,8 +54,7 @@ const Posts = () => {
   const posts = allMarkdownRemark.edges
 
   return (
-    <Container section>
-      <Wrapper>
+    <Wrapper>
       <TitleSection
         title={blogSectionTitle.title}
         subtitle={blogSectionTitle.subtitle}
@@ -75,7 +73,7 @@ const Posts = () => {
               <Link to={slug}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.9 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <Styled.Card>
                     <Styled.Image>
@@ -98,8 +96,7 @@ const Posts = () => {
           )
         })}
       </Styled.Posts>
-      </Wrapper>
-    </Container>
+    </Wrapper>
   )
 }
 

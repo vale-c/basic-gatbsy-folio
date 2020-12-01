@@ -1,14 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Link from "gatsby-link"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Link from 'gatsby-link'
 
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
-import Container from "../../components/UI/Container"
-import TitleSection from "../../components/UI/TitleSection"
-import FormatHtml from "../../components/FormatHtml"
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
+import TitleSection from '../../components/UI/TitleSection'
+import FormatHtml from '../../components/FormatHtml'
 
-import * as Styled from "./styled"
+import * as Styled from './styled'
 
 const Project = ({ data, pageContext }) => {
   const project = data.markdownRemark
@@ -17,31 +16,29 @@ const Project = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={project.frontmatter.title} />
-      <Container section>
-        <Styled.Wrapper>
-          <TitleSection
-            title={project.frontmatter.date}
-            subtitle={project.frontmatter.title}
-          />
-          <FormatHtml content={project.html} />
-          <Styled.Links>
-            <span>
-              {previous && (
-                <Link to={previous.fields.slug} rel="previous">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </span>
-            <span>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </span>
-          </Styled.Links>
-        </Styled.Wrapper>
-      </Container>
+      <Styled.Wrapper>
+        <TitleSection
+          title={project.frontmatter.date}
+          subtitle={project.frontmatter.title}
+        />
+        <FormatHtml content={project.html} />
+        <Styled.Links>
+          <span>
+            {previous && (
+              <Link to={previous.fields.slug} rel="previous">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </span>
+          <span>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </span>
+        </Styled.Links>
+      </Styled.Wrapper>
     </Layout>
   )
 }

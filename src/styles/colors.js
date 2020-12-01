@@ -1,3 +1,4 @@
+//TailwindCSS Basic Palette
 export const colors = {
   transparent: "transparent",
 

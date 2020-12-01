@@ -2,7 +2,7 @@ import React, { useContext, useCallback, createContext } from "react"
 import { ThemeProvider as BaseThemeProvider } from "styled-components"
 
 import { useLocalStorage } from "../hooks/useLocalStorage"
-import { lightTheme, darkTheme } from "../themes"
+import { lightTheme, darkTheme } from "../theme"
 
 const ThemeContext = createContext({
   state: {},

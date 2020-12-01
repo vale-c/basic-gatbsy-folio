@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import Terminal from "../components/Terminal"
-import tw from "tailwind.macro"
+import React from 'react'
+import styled from 'styled-components'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import Terminal from '../components/Terminal'
+import tw from 'tailwind.macro'
 
 const Greeting = styled.h4`
   ${tw`text-xl`}
@@ -16,6 +16,9 @@ const Title = styled.h1`
 
 const Spacer = styled.div`
   ${tw`p-2`}
+`
+const BottomSpacer = styled.div`
+  ${tw`my-12`}
 `
 
 const Subtitle = styled.h3`
@@ -36,7 +39,7 @@ const About = () => (
       <Greeting>
         Hey there!
         <span role="img" aria-label="wave-hand-emoji">
-          {" "}
+          {' '}
           👋
         </span>
       </Greeting>
@@ -48,6 +51,7 @@ const About = () => (
     <Spacer />
     <Spacer />
     <Terminal />
+    <BottomSpacer />
   </Layout>
 )
 

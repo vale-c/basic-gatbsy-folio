@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import tw from "tailwind.macro"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 
 const Title = styled.h1`
   ${tw`text-2xl text-center`}

@@ -1,5 +1,5 @@
 ---
-category: "work section"
-title: "Work"
-subtitle: "All my projects"
+category: 'work section'
+title: 'Work'
+subtitle: 'Projects'
 ---

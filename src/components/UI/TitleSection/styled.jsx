@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import tw from "tailwind.macro"
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const TitleSection = styled.div`
   ${tw`flex flex-col w-full text-3xl`};
 `
 
 export const Title = styled.h1`
-  ${tw`uppercase mb-4 text-2xl font-bold w-full text-left`};
+  ${tw`uppercase text-2xl font-bold w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `
 
@@ -22,12 +22,12 @@ export const Separator = styled.h2`
   ${({ center }) => center && tw`mx-auto`};
 
   &:before {
-    content: "";
+    content: '';
     ${tw`bg-indigo-500 h-full w-px absolute left-0`};
   }
 
   &:after {
-    content: "";
-    ${tw`bg-teal-400 h-6 w-px absolute ml-1`};
+    content: '';
+    ${tw`h-6 w-px absolute ml-1`};
   }
 `
