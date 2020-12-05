@@ -38,7 +38,7 @@ const BlogPost = ({
 }) => {
   const { previous, next } = pageContext
   return (
-    <Layout className="animate-ping">
+    <Layout>
       <SEO title={title} />
       <Container section>
         <Styled.Wrapper>
