@@ -5,17 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { motion, AnimatePresence } from "framer-motion"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import { motion, AnimatePresence } from 'framer-motion'
 
-import HeaderNav from "../HeaderNav"
-import Footer from "../Footer"
+import HeaderNav from '../HeaderNav'
+import Footer from '../Footer'
 
-import * as Styled from "./styled"
+import * as Styled from './styled'
 
-import GlobalStyles from "../../styles/GlobalStyles"
+import GlobalStyles from '../../styles/GlobalStyles'
 
 const Layout = ({ data, children }) => (
   <>

@@ -31,14 +31,22 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              aliases: { sh: "bash", js: "javascript" },
+              aliases: { sh: 'bash', js: 'javascript' },
               showLineNumbers: true,
             },
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 768,
               linkImagesToOriginal: false,
               quality: 85,
+            },
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                'heading[depth=1]': 'text-2xl',
+                'heading[depth=2]': 'text-xl',
+                paragraph: 'text-base',
+              },
             },
           },
         ],
@@ -58,7 +66,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*": ["Strict-Transport-Security: max-age=63072000"],
+          '/*': ['Strict-Transport-Security: max-age=63072000'],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers

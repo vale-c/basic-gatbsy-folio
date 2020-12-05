@@ -1,30 +1,30 @@
-import PropTypes from "prop-types"
-import React, { useState } from "react"
+import PropTypes from 'prop-types'
+import React, { useState } from 'react'
 
-import Toggle from "../Toggle"
-import sun from "../../assets/images/sun.png"
-import moon from "../../assets/images/moon.png"
-import { useTheme } from "../../context/theme-context"
+import Toggle from '../Toggle'
+import sun from '../../assets/images/sun.png'
+import moon from '../../assets/images/moon.png'
+import { useTheme } from '../../context/theme-context'
 
-import * as Styled from "./styled"
-import { ToggleWrapper } from "./styled"
+import * as Styled from './styled'
+import { ToggleWrapper } from './styled'
 
 const mainNavItems = [
   {
-    title: "Home",
-    slug: "/",
+    title: 'Home',
+    slug: '/',
   },
   {
-    title: "About Me",
-    slug: "/about/",
+    title: 'About Me',
+    slug: '/about/',
   },
   {
-    title: "Work",
-    slug: "/work/",
+    title: 'Blog',
+    slug: '/blog/',
   },
   {
-    title: "Blog",
-    slug: "/blog/",
+    title: 'Work',
+    slug: '/work/',
   },
 ]
 
@@ -47,12 +47,12 @@ const HeaderNav = () => {
         ))}
         <ToggleWrapper open={open}>
           <Toggle
-            defaultChecked={theme === "dark" ? true : false}
+            defaultChecked={theme === 'dark' ? true : false}
             onChange={toggleTheme}
             icons={{
               checked: (
                 <img
-                  style={{ pointerEvents: "none" }}
+                  style={{ pointerEvents: 'none' }}
                   width="16"
                   height="16"
                   alt="moon"
@@ -62,7 +62,7 @@ const HeaderNav = () => {
               ),
               unchecked: (
                 <img
-                  style={{ pointerEvents: "none" }}
+                  style={{ pointerEvents: 'none' }}
                   width="16"
                   height="16"
                   alt="sun"

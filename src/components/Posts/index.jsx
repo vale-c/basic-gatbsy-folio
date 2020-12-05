@@ -38,7 +38,7 @@ const Posts = () => {
               tags
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid(maxWidth: 500, maxHeight: 300, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const Title = styled.h3`
-  ${tw`font-semibold mb-4 text-center`};
+  ${tw`font-semibold mb-2`};
 `
 
 export const Image = styled.figure`
@@ -10,7 +10,7 @@ export const Image = styled.figure`
 `
 
 export const Links = styled.div`
-  ${tw`w-full flex justify-between mt-10 -mx-4`};
+  ${tw`w-full flex justify-between mt-10 font-bold hover:underline`};
 `
 export const Wrapper = styled.div`
   ${tw`px-12`}

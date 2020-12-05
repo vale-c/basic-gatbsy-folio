@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
+import Container from '../../components/UI/Container'
 import TitleSection from '../../components/UI/TitleSection'
 import FormatHtml from '../../components/FormatHtml'
 
@@ -16,29 +17,31 @@ const Project = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={project.frontmatter.title} />
-      <Styled.Wrapper>
-        <TitleSection
-          title={project.frontmatter.date}
-          subtitle={project.frontmatter.title}
-        />
-        <FormatHtml content={project.html} />
-        <Styled.Links>
-          <span>
-            {previous && (
-              <Link to={previous.fields.slug} rel="previous">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </span>
-          <span>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </span>
-        </Styled.Links>
-      </Styled.Wrapper>
+      <Container section>
+        <Styled.Wrapper>
+          <TitleSection
+            title={project.frontmatter.date}
+            subtitle={project.frontmatter.title}
+          />
+          <FormatHtml content={project.html} />
+          <Styled.Links>
+            <span>
+              {previous && (
+                <Link to={previous.fields.slug} rel="previous">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </span>
+            <span>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </span>
+          </Styled.Links>
+        </Styled.Wrapper>
+      </Container>
     </Layout>
   )
 }

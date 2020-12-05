@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components"
-import { theme } from "../context/theme-context"
-import colors from "./colors"
+import { createGlobalStyle } from 'styled-components'
+import { theme } from '../context/theme-context'
+import colors from './colors'
+import tw from 'tailwind.macro'
 
 export default createGlobalStyle`
     html {
@@ -12,13 +13,28 @@ export default createGlobalStyle`
     }
     
     h1, h2, h3, h4, h5, h6, a {
-        font-family: 'Poppins', sans-serif;
         color: ${({ theme }) => theme.fontAccent};
     }
 
+    h1 {
+        font-size: ${tw`text-4xl`};
+    }
+
+    h2 { 
+        font-size: ${tw`text-3xl`};
+    }
+
+    h3, h4, h5, h6 {
+        font-size: ${tw`text-2xl`};
+    }
+
     p {
-        font-family: 'Nunito', sans-serif;
         color: ${({ theme }) => theme.description};
+        font-size: ${tw`text-xl`};
+    }
+
+    a {
+        font-size: ${tw`text-base`};
     }
 
     .react-toggle--checked 

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const ContentWrapper = styled.div`
   ${tw`m-auto text-center`}
@@ -9,7 +9,6 @@ export const HeaderTitle = styled.h1`
 `
 
 export const HeaderDescription = styled.h3`
-  font-family: 'Nunito', sans-serif;
   ${tw`text-2xl block`}
   color: ${({ theme }) => theme.description};
 `
