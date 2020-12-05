@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const TerminalContainer = styled.div`
-  ${tw`flex shadow-xl px-12 sm:px-24`}
+  ${tw`flex shadow-xl`}
 `
 
 export const OuterWrapper = styled.div`
-  ${tw`w-full shadow-2xl subpixel-antialiased rounded-lg h-64 bg-black border-b border-black mx-auto`}
+  ${tw`w-1/2 shadow-2xl subpixel-antialiased rounded-lg h-100 bg-black border-b border-black mx-auto`}
 `
 
 export const TerminalHeader = styled.div`
@@ -14,7 +14,7 @@ export const TerminalHeader = styled.div`
 `
 
 export const TerminalTitle = styled.div`
-  ${tw`mx-auto pr-16 text-grey-darkest font-medium`}
+  ${tw`mx-auto pr-16 text-grey-darkest font-semibold`}
 `
 
 export const CloseButton = styled.div`

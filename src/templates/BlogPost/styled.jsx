@@ -8,10 +8,10 @@ export const Title = styled.h1`
 `
 
 export const Image = styled(Img)`
-  ${tw`w-full rounded-lg overflow-hidden mt-4 mb-10 mx-auto`};
+  ${tw`w-full rounded-lg overflow-hidden mt-5 mb-10 mx-auto`};
 `
 export const ImgWrapper = styled.div`
-  ${tw`text-center animate-ping`}
+  ${tw`text-center`}
   &:hover {
     transform: scale(1.15);
     cursor: pointer;
@@ -27,7 +27,7 @@ export const PostLink = styled(Link)`
   ${tw`hover:underline`};
 `
 export const Wrapper = styled.div`
-  ${tw`px-12`}
+  ${tw`px-2`}
 `
 
 export const Time = styled.div`

@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const Projects = styled.div`
-  ${tw`flex flex-wrap justify-between -mx-6`};
+  ${tw`flex flex-wrap justify-between -mx-6 `};
 `
 
 export const Project = styled.div`
-  ${tw`w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink`};
+  ${tw`w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink `};
 `
 
 export const Card = styled.div`
@@ -15,12 +15,13 @@ export const Card = styled.div`
 `
 
 export const Content = styled.div`
-  ${tw`p-4 text-indigo-900`};
+  ${tw`p-4`};
 `
 
 export const Title = styled.h3`
   ${tw`font-semibold mb-4`};
 `
+
 export const TitleSection = styled.h3`
   ${tw`font-semibold mb-4`};
 `

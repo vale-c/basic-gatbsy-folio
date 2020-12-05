@@ -1,14 +1,19 @@
 @font-face {
-  font-family: 'GT Walsheim';
+  font-family: 'GT Walsheim thin';
   src: url('../assets/fonts/GTWalsheim/gt-walsheim-thin.ttf');
 }
 
 @font-face {
-  font-family: 'GT Walsheim';
+  font-family: 'GT Walsheim light';
   src: url('../assets/fonts/GTWalsheim/gt-walsheim-light.ttf');
 }
 
 @font-face {
-  font-family: 'GT Walsheim';
+  font-family: 'GT Walsheim medium';
   src: url('../assets/fonts/GTWalsheim/gt-walsheim-medium.ttf');
+}
+
+@font-face {
+  font-family: 'GT Walsheim bold';
+  src: url('../assets/fonts/GTWalsheim/gt-walsheim-bold.ttf');
 }

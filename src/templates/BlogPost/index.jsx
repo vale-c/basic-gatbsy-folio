@@ -8,7 +8,9 @@ import Container from '../../components/UI/Container'
 import rehypeReact from 'rehype-react'
 import * as Styled from './styled'
 
-const Paragraph = ({ children }) => <p className="mt-2">{children}</p>
+const Paragraph = ({ children }) => (
+  <p className="mt-2 md:text-base sm:text-lg">{children}</p>
+)
 const ExternalLink = ({ href, children }) => (
   <a
     href={href}

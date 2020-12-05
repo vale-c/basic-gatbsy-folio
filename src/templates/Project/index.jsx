@@ -30,7 +30,7 @@ const renderAst = new rehypeReact({
 const BlogPost = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, date, formattedDate, cover },
+      frontmatter: { title, cover },
       htmlAst,
     },
   },
@@ -42,26 +42,24 @@ const BlogPost = ({
       <SEO title={title} />
       <Container section>
         <Styled.Wrapper>
-          <Styled.Time dateTime={date}>{formattedDate}</Styled.Time>
           <Styled.Title>{title}</Styled.Title>
           {/* <Styled.ImgWrapper>
-            <Styled.Image fixed={cover.childImageSharp.fixed} alt={title} />
+            <Styled.Image fluid={cover.childImageSharp.fluid} alt={title} />
           </Styled.ImgWrapper> */}
-
           <Paragraph>{renderAst(htmlAst)}</Paragraph>
           <Styled.Links>
             <span>
               {previous && (
-                <Styled.PostLink to={previous.fields.slug} rel="previous">
+                <Styled.ProjectLink to={previous.fields.slug} rel="previous">
                   ← {previous.frontmatter.title}
-                </Styled.PostLink>
+                </Styled.ProjectLink>
               )}
             </span>
             <span>
               {next && (
-                <Styled.PostLink to={next.fields.slug} rel="next">
+                <Styled.ProjectLink to={next.fields.slug} rel="next">
                   {next.frontmatter.title} →
-                </Styled.PostLink>
+                </Styled.ProjectLink>
               )}
             </span>
           </Styled.Links>
@@ -78,8 +76,6 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        date
-        formattedDate: date(formatString: "MMM DD, YYYY")
       }
       htmlAst
     }
