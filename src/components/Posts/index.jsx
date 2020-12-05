@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'
 import TitleSection from '../UI/TitleSection'
 
 import * as Styled from './styled'
-import { Wrapper } from './styled'
 
 const Posts = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
@@ -54,7 +53,7 @@ const Posts = () => {
   const posts = allMarkdownRemark.edges
 
   return (
-    <Wrapper>
+    <Styled.Container>
       <TitleSection
         title={blogSectionTitle.title}
         subtitle={blogSectionTitle.subtitle}
@@ -96,7 +95,7 @@ const Posts = () => {
           )
         })}
       </Styled.Posts>
-    </Wrapper>
+    </Styled.Container>
   )
 }
 

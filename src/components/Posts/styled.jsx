@@ -1,17 +1,20 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
+export const Container = styled.div`
+  ${tw`container my-12 mx-auto px-4 md:px-12`}
+`
 export const Posts = styled.div`
-  ${tw`flex flex-wrap justify-between -mx-6`};
+  ${tw`flex flex-wrap -mx-1 lg:-mx-4`};
 `
 
 export const Post = styled.div`
-  ${tw`w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink p-3`};
+  ${tw`my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3`};
 `
 
 export const Card = styled.div`
   border: 2px solid ${({ theme }) => theme.fontAccent};
-  ${tw`flex-1 rounded-lg overflow-hidden shadow-lg`};
+  ${tw`flex-1 overflow-hidden rounded-lg shadow-lg`};
 `
 
 export const Content = styled.div`
@@ -41,8 +44,4 @@ export const Tag = styled.span`
   color: ${({ theme }) => theme.description};
   ${tw`mb-2 text-xs font-bold rounded-full px-2 py-1 mr-2`}
   border: 1px solid ${({ theme }) => theme.fontAccent};
-`
-
-export const Wrapper = styled.div`
-  ${tw`px-24 m-0`}
 `

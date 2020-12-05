@@ -44,45 +44,47 @@ const Projects = () => {
   const projects = allMarkdownRemark.edges
 
   return (
-    <Styled.Wrapper>
-      <TitleSection
-        title={projectSectionTitle.title}
-        subtitle={projectSectionTitle.subtitle}
-        center
-      />
-      <Styled.Projects>
-        {projects.map(item => {
-          const {
-            id,
-            fields: { slug },
-            frontmatter: { title, description, tags },
-          } = item.node
+    <Styled.Container>
+      <Styled.Wrapper>
+        <TitleSection
+          title={projectSectionTitle.title}
+          subtitle={projectSectionTitle.subtitle}
+          center
+        />
+        <Styled.Projects>
+          {projects.map(item => {
+            const {
+              id,
+              fields: { slug },
+              frontmatter: { title, description, tags },
+            } = item.node
 
-          return (
-            <Styled.Project key={id}>
-              <Link to={slug}>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Styled.Card>
-                    <Styled.Content>
-                      <Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{description}</Styled.Description>
-                    </Styled.Content>
-                    <Styled.Tags>
-                      {tags.map(item => (
-                        <Styled.Tag key={item}>{item}</Styled.Tag>
-                      ))}
-                    </Styled.Tags>
-                  </Styled.Card>
-                </motion.div>
-              </Link>
-            </Styled.Project>
-          )
-        })}
-      </Styled.Projects>
-    </Styled.Wrapper>
+            return (
+              <Styled.Project key={id}>
+                <Link to={slug}>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Styled.Card>
+                      <Styled.Content>
+                        <Styled.Title>{title}</Styled.Title>
+                        <Styled.Description>{description}</Styled.Description>
+                      </Styled.Content>
+                      <Styled.Tags>
+                        {tags.map(item => (
+                          <Styled.Tag key={item}>{item}</Styled.Tag>
+                        ))}
+                      </Styled.Tags>
+                    </Styled.Card>
+                  </motion.div>
+                </Link>
+              </Styled.Project>
+            )
+          })}
+        </Styled.Projects>
+      </Styled.Wrapper>
+    </Styled.Container>
   )
 }
 

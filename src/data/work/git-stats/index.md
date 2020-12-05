@@ -6,6 +6,8 @@ tags: ['React.js', 'SPA']
 published: true
 ---
 
+![Git Stats](git-stalk.png)
+
 I built this Single Page Application using React.js
 
 You can easily enter a GitHub username and find all the information about that users’ projects, starred repos, website, company, location, etc…
