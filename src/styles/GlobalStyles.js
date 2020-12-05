@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { theme } from '../context/theme-context'
-import colors from './colors'
+import './tailwind.css'
 import tw from 'tailwind.macro'
 
 export default createGlobalStyle`
