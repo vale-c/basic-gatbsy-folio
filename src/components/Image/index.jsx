@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { StyledImage } from "./styled"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { StyledImage } from './styled'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,7 +16,9 @@ import { StyledImage } from "./styled"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "bitmojis/vale-bitmoji-home.png" }) {
+      placeholderImage: file(
+        relativePath: { eq: "bitmojis/vale-bitmoji-home.png" }
+      ) {
         childImageSharp {
           fixed(width: 300, height: 300) {
             ...GatsbyImageSharpFixed

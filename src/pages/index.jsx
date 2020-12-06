@@ -43,11 +43,11 @@ const AboutSub = styled.span`
 `
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl pt-6 md:pt-12 text-justify`};
+  ${tw`text-lg md:text-xl lg:text-2xl pt-6 md:pt-12 text-justify`};
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-xl md:text-2xl lg:text-3xl`};
 `
 
 const Footer = styled.footer`
@@ -74,34 +74,35 @@ const Index = () => (
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="/blog/"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            title="Classically"
+            link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
+            bg="linear-gradient(to right, #E23145 0%, #9E3443 100%)"
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective
-            contest.
+            This project is a concept for an educational app about classical
+            music.
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-          >
-            I entered the DOCMA 2017 award with this Harry Potter inspired
-            image.
-          </ProjectCard>
-          <ProjectCard
-            title="Tomb Raider"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-          >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
-          </ProjectCard>
-          <ProjectCard
-            title="Eagle"
-            link="https://www.behance.net/gallery/38068151/Eagle"
+            title="Fontsy"
+            link="https://dribbble.com/shots/4307574-Fancy-Fonts"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            A fantasy image manipulation relocating the habitat of wild animals.
+            A fancy paywall for a photo editing app specialized in adding
+            gorgeous texts to your images.
+          </ProjectCard>
+          <ProjectCard
+            title="Safe-fi"
+            link="https://dribbble.com/shots/4307518-Secured"
+            bg="linear-gradient(to right, #5EC2FE 0%, #12304A 100%)"
+          >
+            This is a paywall mockup for a VPN app allowing people to surf the
+            Web in a more secure way.
+          </ProjectCard>
+          <ProjectCard
+            title="Booksmart"
+            link="https://dribbble.com/shots/7134623-Bookstore-App-Concept"
+            bg="linear-gradient(to right, #A74276 0%, #6A679B 100%)"
+          >
+            Concept for a Bookstore Mobile App
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>

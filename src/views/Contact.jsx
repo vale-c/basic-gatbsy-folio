@@ -14,6 +14,7 @@ const WaveWrapper = styled.div`
 `
 
 const InnerWave = styled.div`
+  color: ${({ theme }) => theme.description};
   ${tw`relative h-full`};
   svg {
     width: 100%;
