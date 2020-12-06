@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
-import Container from '../../components/UI/Container'
 
 import rehypeReact from 'rehype-react'
 import * as Styled from './styled'
@@ -42,7 +41,7 @@ const BlogPost = ({
   return (
     <Layout>
       <SEO title={title} />
-      <Container section>
+      <Styled.Container>
         <Styled.Wrapper>
           <Styled.Time dateTime={date}>{formattedDate}</Styled.Time>
           <Styled.Title>{title}</Styled.Title>
@@ -68,7 +67,7 @@ const BlogPost = ({
             </span>
           </Styled.Links>
         </Styled.Wrapper>
-      </Container>
+      </Styled.Container>
     </Layout>
   )
 }

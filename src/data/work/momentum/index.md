@@ -1,5 +1,6 @@
 ---
 category: 'work'
+cover: './momentum.png'
 title: 'Momentum'
 description: 'My Momentum Dashboard Clone'
 tags: ['React.js', 'API', 'SPA']
@@ -22,3 +23,13 @@ A while ago I decided I wanted to build a custom React Web App inspired by the M
 • It uses [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to get accurate info about your current location 🗺️.
 
 • It uses [OpenWeather API](https://openweathermap.org/api) integration to get precise Weather Data ☁️.
+
+<br>
+
+## Github Repo
+
+[Code here](https://github.com/vale-c/Momentum).
+
+## Live Demo
+
+[Live Demo here](https://momentumdash.netlify.com/).

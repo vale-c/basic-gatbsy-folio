@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import { motion } from 'framer-motion'
 
-import TitleSection from '../UI/TitleSection'
-
 import * as Styled from './styled'
 
 const Projects = () => {
@@ -46,7 +44,7 @@ const Projects = () => {
   return (
     <Styled.Container>
       <Styled.Wrapper>
-        <TitleSection
+        <Styled.TitleSection
           title={projectSectionTitle.title}
           subtitle={projectSectionTitle.subtitle}
           center
@@ -64,7 +62,7 @@ const Projects = () => {
                 <Link to={slug}>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.9 }}
+                    whiletap={{ scale: 0.9 }}
                   >
                     <Styled.Card>
                       <Styled.Content>

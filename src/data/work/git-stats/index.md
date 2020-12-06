@@ -1,12 +1,11 @@
 ---
 category: 'work'
-title: 'Github User Finder'
-description: 'Find Github Users easily'
+cover: './git-stats.png'
+title: 'Github User Stats'
+description: 'Find Github User info easily'
 tags: ['React.js', 'SPA']
 published: true
 ---
-
-![Git Stats](git-stalk.png)
 
 I built this Single Page Application using React.js
 

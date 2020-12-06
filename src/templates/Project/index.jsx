@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
-import Container from '../../components/UI/Container'
 
 import rehypeReact from 'rehype-react'
 import * as Styled from './styled'
@@ -40,12 +39,12 @@ const BlogPost = ({
   return (
     <Layout>
       <SEO title={title} />
-      <Container section>
+      <Styled.Container>
         <Styled.Wrapper>
           <Styled.Title>{title}</Styled.Title>
-          {/* <Styled.ImgWrapper>
-            <Styled.Image fluid={cover.childImageSharp.fluid} alt={title} />
-          </Styled.ImgWrapper> */}
+          <Styled.ImgWrapper>
+            <Styled.Image fixed={cover.childImageSharp.fixed} alt={title} />
+          </Styled.ImgWrapper>
           <Paragraph>{renderAst(htmlAst)}</Paragraph>
           <Styled.Links>
             <span>
@@ -64,7 +63,7 @@ const BlogPost = ({
             </span>
           </Styled.Links>
         </Styled.Wrapper>
-      </Container>
+      </Styled.Container>
     </Layout>
   )
 }
@@ -76,6 +75,13 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        cover {
+          childImageSharp {
+            fixed(width: 500, quality: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
       htmlAst
     }

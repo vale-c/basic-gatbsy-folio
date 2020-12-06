@@ -24,6 +24,9 @@ export const Content = styled.div`
 export const Title = styled.h3`
   ${tw`text-md font-semibold mb-4`};
 `
+export const TitleSection = styled.h3`
+  ${tw`font-semibold mb-4`};
+`
 
 export const Image = styled.figure`
   ${tw`w-full`};

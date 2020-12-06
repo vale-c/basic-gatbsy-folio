@@ -3,9 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import { motion } from 'framer-motion'
-
-import TitleSection from '../UI/TitleSection'
-
 import * as Styled from './styled'
 
 const Posts = () => {
@@ -37,7 +34,7 @@ const Posts = () => {
               tags
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 500, maxHeight: 300, quality: 100) {
+                  fluid(maxWidth: 500, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -54,7 +51,7 @@ const Posts = () => {
 
   return (
     <Styled.Container>
-      <TitleSection
+      <Styled.TitleSection
         title={blogSectionTitle.title}
         subtitle={blogSectionTitle.subtitle}
         center
@@ -71,8 +68,8 @@ const Posts = () => {
             <Styled.Post key={id}>
               <Link to={slug}>
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whilehover={{ scale: 1.05 }}
+                  whiletap={{ scale: 0.95 }}
                 >
                   <Styled.Card>
                     <Styled.Image>

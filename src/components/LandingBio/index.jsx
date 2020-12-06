@@ -1,14 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "../Image"
-import Container from "../UI/Container"
-import {
-  ContentWrapper,
-  HeaderTitle,
-  HeaderDescription,
-  ImageWrapper,
-} from "./styled"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import Image from '../Image'
+import * as Styled from './styled'
 
 const LandingBio = () => (
   <StaticQuery
@@ -23,24 +17,26 @@ const LandingBio = () => (
       }
     `}
     render={data => (
-      <Container>
-        <ContentWrapper>
-          <HeaderTitle>{data.site.siteMetadata.title}</HeaderTitle>
-          <HeaderDescription>
+      <Styled.Container>
+        <Styled.ContentWrapper>
+          <Styled.HeaderTitle>
+            {data.site.siteMetadata.title}
+          </Styled.HeaderTitle>
+          <Styled.HeaderDescription>
             {data.site.siteMetadata.subtitle}
-          </HeaderDescription>
-          <ImageWrapper>
+          </Styled.HeaderDescription>
+          <Styled.ImageWrapper>
             <Image fadeIn />
-          </ImageWrapper>
-        </ContentWrapper>
-      </Container>
+          </Styled.ImageWrapper>
+        </Styled.ContentWrapper>
+      </Styled.Container>
     )}
   />
 )
 
 export default LandingBio
 
-HeaderTitle.propTypes = {
+Styled.HeaderTitle.propTypes = {
   siteTitle: PropTypes.string,
   subtitle: PropTypes.string,
 }
