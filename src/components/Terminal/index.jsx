@@ -1,5 +1,5 @@
-import React from "react"
-import * as Styled from "./styled"
+import React from 'react'
+import * as Styled from './styled'
 
 const Terminal = () => {
   return (
@@ -26,10 +26,10 @@ const Terminal = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
-              Design Systems{" "}
-            </a>{" "}
-            & a special interest in{" "}
+              {' '}
+              Design Systems{' '}
+            </a>{' '}
+            & a special interest in{' '}
             <a
               href="https://en.wikipedia.org/wiki/User-centered_design"
               target="_blank"
@@ -40,6 +40,14 @@ const Terminal = () => {
             .
             <Styled.Spacer />I really enjoy thinking about Usability, and love
             to make great Designs come to life through code.
+          </Styled.Content>
+          <Styled.Spacer />
+          <Styled.Content>
+            Check out my CV{' '}
+            <a href="https://resume.io/r/KAIMbk" target="_blank">
+              here
+            </a>
+            .{' '}
           </Styled.Content>
         </Styled.TerminalContent>
       </Styled.OuterWrapper>

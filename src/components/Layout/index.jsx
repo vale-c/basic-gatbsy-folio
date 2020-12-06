@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import HeaderNav from '../HeaderNav'
-import Footer from '../Footer'
 
 import * as Styled from './styled'
 
@@ -28,7 +27,6 @@ const Layout = ({ data, children }) => (
         >
           {children}
         </motion.div>
-        <Footer />
       </Styled.Layout>
     </AnimatePresence>
   </>

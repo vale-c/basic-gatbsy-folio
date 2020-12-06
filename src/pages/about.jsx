@@ -40,13 +40,13 @@ const About = () => (
         Hey there!
         <span role="img" aria-label="wave-hand-emoji">
           {' '}
-          👋
+          👋🏻
         </span>
       </Greeting>
       <Spacer />
     </Subtitle>
     <StyledText>
-      Thanks for taking the time to land on this About Me page. <Spacer />
+      Thanks for taking the time to land on this page. <Spacer />
     </StyledText>
     <Spacer />
     <Spacer />
