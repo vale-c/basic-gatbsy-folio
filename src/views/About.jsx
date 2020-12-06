@@ -18,7 +18,7 @@ const About = ({ children, offset }) => (
     <Divider speed={0.1} offset={offset}>
       <UpDown>
         <SVG
-          icon="box"
+          icon="star"
           hiddenMobile
           width={6}
           fill={colors.blue}
@@ -26,7 +26,7 @@ const About = ({ children, offset }) => (
           top="75%"
         />
         <SVG
-          icon="upDown"
+          icon="camera"
           hiddenMobile
           width={8}
           fill={colors['grey-darkest']}
@@ -34,14 +34,14 @@ const About = ({ children, offset }) => (
           top="20%"
         />
         <SVG
-          icon="triangle"
+          icon="game"
           width={8}
           stroke={colors['grey-darkest']}
           left="25%"
           top="5%"
         />
         <SVG
-          icon="upDown"
+          icon="notification"
           hiddenMobile
           width={24}
           fill={colors.orange}
@@ -51,15 +51,15 @@ const About = ({ children, offset }) => (
       </UpDown>
       <UpDownWide>
         <SVG
-          icon="arrowUp"
+          icon="arrowUpSquare"
           hiddenMobile
           width={16}
-          fill={colors.purple}
+          fill={colors['purple-light']}
           left="5%"
           top="80%"
         />
         <SVG
-          icon="triangle"
+          icon="chart"
           width={12}
           stroke={colors.white}
           left="95%"
@@ -67,7 +67,7 @@ const About = ({ children, offset }) => (
         />
         <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
         <SVG
-          icon="upDown"
+          icon="wallet"
           hiddenMobile
           width={8}
           fill={colors['grey-darkest']}
@@ -77,7 +77,7 @@ const About = ({ children, offset }) => (
       </UpDownWide>
       <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
       <SVG
-        icon="circle"
+        icon="profile"
         width={12}
         fill={colors['grey-darkest']}
         left="70%"
@@ -85,14 +85,14 @@ const About = ({ children, offset }) => (
       />
       <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
       <SVG
-        icon="box"
+        icon="notification"
         width={12}
         fill={colors['grey-darkest']}
         left="20%"
         top="30%"
       />
       <SVG
-        icon="hexa"
+        icon="send"
         width={8}
         stroke={colors['grey-darkest']}
         left="80%"

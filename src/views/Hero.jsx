@@ -20,7 +20,7 @@ const Hero = ({ children, offset }) => (
           icon="search"
           hiddenMobile
           width={48}
-          stroke={colors.pink}
+          stroke={colors['indigo-lighter']}
           left="5%"
           top="20%"
         />
@@ -34,7 +34,7 @@ const Hero = ({ children, offset }) => (
         <SVG
           icon="volumeUp"
           width={16}
-          fill={colors['grey-dark']}
+          fill={colors.grey}
           left="60%"
           top="15%"
         />
@@ -65,14 +65,14 @@ const Hero = ({ children, offset }) => (
         <SVG
           icon="ticket"
           width={16}
-          stroke={colors['grey-darkest']}
+          stroke={colors['grey-light']}
           left="30%"
           top="65%"
         />
         <SVG
-          icon="heart"
+          icon="setting"
           width={6}
-          fill={colors['red-light']}
+          fill={colors['grey-light']}
           left="75%"
           top="10%"
         />
@@ -80,16 +80,16 @@ const Hero = ({ children, offset }) => (
           icon="ticketStar"
           hiddenMobile
           width={8}
-          fill={colors['grey-dark']}
+          fill={colors['indigo-light']}
           left="45%"
           top="10%"
         />
       </UpDownWide>
       <SVG
-        icon="paper"
+        icon="heart"
         hiddenMobile
         width={24}
-        fill={colors['grey-darker']}
+        fill={colors['red-light']}
         left="5%"
         top="70%"
       />
@@ -118,7 +118,7 @@ const Hero = ({ children, offset }) => (
         icon="chart"
         hiddenMobile
         width={24}
-        fill={colors['grey-darker']}
+        fill={colors['green-light']}
         left="40%"
         top="80%"
       />
@@ -134,7 +134,7 @@ const Hero = ({ children, offset }) => (
         icon="game"
         hiddenMobile
         width={64}
-        fill={colors.purple}
+        fill={colors['purple-light']}
         left="5%"
         top="90%"
       />
@@ -155,7 +155,7 @@ const Hero = ({ children, offset }) => (
       <SVG
         icon="setting"
         width={16}
-        stroke={colors['grey-darker']}
+        stroke={colors['green-lightest']}
         left="10%"
         top="50%"
       />

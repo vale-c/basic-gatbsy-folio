@@ -137,8 +137,9 @@ const Index = () => (
         <Inner>
           <ContactTitle>Get in touch</ContactTitle>
           <ContactText>
-            Say <a href="mailto:frontendvale@gmail.com">Hi</a> or find me on
-            other platforms:{' '}
+            Dont'be a <strike>stranger</strike>.
+            <br /> Say <a href="mailto:frontendvale@gmail.com">Hi</a> or follow
+            me on:{' '}
             <a href="https://dribbble.com/blueberrymuffin95" target="_blank">
               Dribbble
             </a>{' '}
