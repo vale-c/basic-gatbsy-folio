@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
 `
 
 export const HeaderTitle = styled.h1`
-  ${tw`text-4xl`}
+  ${tw`mt-8 text-4xl`}
 `
 
 export const HeaderDescription = styled.h3`
@@ -16,5 +16,5 @@ export const HeaderDescription = styled.h3`
 `
 
 export const ImageWrapper = styled.div`
-  ${tw`flex justify-center`}
+  ${tw`flex justify-center mt-12`}
 `

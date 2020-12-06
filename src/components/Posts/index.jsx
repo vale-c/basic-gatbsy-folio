@@ -71,21 +71,19 @@ const Posts = () => {
                   whilehover={{ scale: 1.05 }}
                   whiletap={{ scale: 0.95 }}
                 >
-                  <Styled.Card>
-                    <Styled.Image>
-                      <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                    </Styled.Image>
-                    <Styled.Content>
-                      <Styled.Date>{date}</Styled.Date>
-                      <Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{description}</Styled.Description>
-                    </Styled.Content>
-                    <Styled.Tags>
-                      {tags.map(item => (
-                        <Styled.Tag key={item}>{item}</Styled.Tag>
-                      ))}
-                    </Styled.Tags>
-                  </Styled.Card>
+                  <Styled.Image>
+                    <Img fluid={cover.childImageSharp.fluid} alt={title} />
+                  </Styled.Image>
+                  <Styled.Content>
+                    <Styled.Date>{date}</Styled.Date>
+                    <Styled.Title>{title}</Styled.Title>
+                    <Styled.Description>{description}</Styled.Description>
+                  </Styled.Content>
+                  <Styled.Tags>
+                    {tags.map(item => (
+                      <Styled.Tag key={item}>{item}</Styled.Tag>
+                    ))}
+                  </Styled.Tags>
                 </motion.div>
               </Link>
             </Styled.Post>

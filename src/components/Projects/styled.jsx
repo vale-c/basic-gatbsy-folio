@@ -5,16 +5,17 @@ export const Container = styled.div`
   ${tw`container my-12 mx-auto px-4 md:px-12`}
 `
 export const Projects = styled.div`
-  ${tw`flex flex-wrap -mx-1 lg:-mx-4`};
-`
-
-export const Project = styled.div`
-  ${tw`my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3`};
-`
-
-export const Card = styled.div`
-  border: 2px solid ${({ theme }) => theme.fontAccent};
-  ${tw`flex-1 overflow-hidden rounded-lg shadow-lg`};
+  ${tw`flex flex-wrap justify-between mt-8`};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
 `
 
 export const Content = styled.div`

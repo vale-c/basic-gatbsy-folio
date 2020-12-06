@@ -5,16 +5,12 @@ export const Container = styled.div`
   ${tw`container my-12 mx-auto px-4 md:px-12`}
 `
 export const Posts = styled.div`
-  ${tw`flex flex-wrap -mx-1 lg:-mx-4`};
+  ${tw`grid grid-cols-3 gap-4`};
 `
 
 export const Post = styled.div`
-  ${tw`my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3`};
-`
-
-export const Card = styled.div`
   border: 2px solid ${({ theme }) => theme.fontAccent};
-  ${tw`flex-1 overflow-hidden rounded-lg shadow-lg`};
+  ${tw`overflow-hidden rounded-lg shadow-lg`};
 `
 
 export const Content = styled.div`

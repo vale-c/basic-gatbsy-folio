@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import { motion } from 'framer-motion'
 
+import ProjectCard from '../ProjectCard'
 import * as Styled from './styled'
 
 const Projects = () => {
@@ -58,26 +59,24 @@ const Projects = () => {
             } = item.node
 
             return (
-              <Styled.Project key={id}>
+              <ProjectCard key={id}>
                 <Link to={slug}>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    whiletap={{ scale: 0.9 }}
+                    whiletap={{ scale: 0.95 }}
                   >
-                    <Styled.Card>
-                      <Styled.Content>
-                        <Styled.Title>{title}</Styled.Title>
-                        <Styled.Description>{description}</Styled.Description>
-                      </Styled.Content>
-                      <Styled.Tags>
-                        {tags.map(item => (
-                          <Styled.Tag key={item}>{item}</Styled.Tag>
-                        ))}
-                      </Styled.Tags>
-                    </Styled.Card>
+                    <Styled.Content>
+                      <Styled.Title>{title}</Styled.Title>
+                      <Styled.Description>{description}</Styled.Description>
+                    </Styled.Content>
+                    <Styled.Tags>
+                      {tags.map(item => (
+                        <Styled.Tag key={item}>{item}</Styled.Tag>
+                      ))}
+                    </Styled.Tags>
                   </motion.div>
                 </Link>
-              </Styled.Project>
+              </ProjectCard>
             )
           })}
         </Styled.Projects>

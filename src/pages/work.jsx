@@ -26,8 +26,8 @@ const Work = () => (
   <WorkWrapper>
     <Layout>
       <SEO title="Work" />
-      {/* <Title>Personal Projects</Title>
-      <Subtitle>Check out some of my side-projects.</Subtitle> */}
+      <Title>Personal Projects</Title>
+      <Subtitle>Check out some of my side-projects.</Subtitle>
       <Projects />
       <StyledLink to="/">🔙 Home</StyledLink>
     </Layout>
