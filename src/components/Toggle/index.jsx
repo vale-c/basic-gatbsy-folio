@@ -1,6 +1,5 @@
-import './Toggle.css'
-
 import React, { PureComponent } from 'react'
+import './toggle.css'
 
 function pointerCoord(event) {
   // get coordinates for either a mouse click
