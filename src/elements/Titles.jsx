@@ -20,7 +20,12 @@ export const Title = styled.h1`
   }
 `
 
-export const BigTitle = styled.h1`
+export const Greeting = styled.h1`
+  color: ${({ theme }) => theme.description};
+  ${tw`text-5xl lg:text-6xl mb-6 tracking-wide`};
+  text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+`
+export const Name = styled.h1`
   ${tw`text-5xl lg:text-6xl mb-6 tracking-wide`};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `

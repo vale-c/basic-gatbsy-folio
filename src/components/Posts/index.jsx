@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import { motion } from 'framer-motion'
 import * as Styled from './styled'
 
-const Posts = () => {
+const MyPosts = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { category: { eq: "blog section" } }) {
@@ -34,7 +34,7 @@ const Posts = () => {
               tags
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 500, quality: 100) {
+                  fluid(maxWidth: 500, maxHeight: 300, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -51,47 +51,49 @@ const Posts = () => {
 
   return (
     <Styled.Container>
-      <Styled.TitleSection
-        title={blogSectionTitle.title}
-        subtitle={blogSectionTitle.subtitle}
-        center
-      />
-      <Styled.Posts>
-        {posts.map(item => {
-          const {
-            id,
-            fields: { slug },
-            frontmatter: { title, cover, description, date, tags },
-          } = item.node
+      <Styled.Wrapper>
+        <Styled.TitleSection
+          title={blogSectionTitle.title}
+          subtitle={blogSectionTitle.subtitle}
+          center
+        />
+        <Styled.Posts>
+          {posts.map(item => {
+            const {
+              id,
+              fields: { slug },
+              frontmatter: { title, cover, description, date, tags },
+            } = item.node
 
-          return (
-            <Styled.Post key={id}>
-              <Link to={slug}>
-                <motion.div
-                  whilehover={{ scale: 1.05 }}
-                  whiletap={{ scale: 0.95 }}
-                >
-                  <Styled.Image>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                  </Styled.Image>
-                  <Styled.Content>
-                    <Styled.Date>{date}</Styled.Date>
-                    <Styled.Title>{title}</Styled.Title>
-                    <Styled.Description>{description}</Styled.Description>
-                  </Styled.Content>
-                  <Styled.Tags>
-                    {tags.map(item => (
-                      <Styled.Tag key={item}>{item}</Styled.Tag>
-                    ))}
-                  </Styled.Tags>
-                </motion.div>
-              </Link>
-            </Styled.Post>
-          )
-        })}
-      </Styled.Posts>
+            return (
+              <Styled.BlogCard key={id}>
+                <Link to={slug}>
+                  <motion.div
+                    whilehover={{ scale: 1.05 }}
+                    whiletap={{ scale: 0.95 }}
+                  >
+                    <Styled.Image>
+                      <Img fluid={cover.childImageSharp.fluid} alt={title} />
+                    </Styled.Image>
+                    <Styled.Content>
+                      <Styled.Date>{date}</Styled.Date>
+                      <Styled.Title>{title}</Styled.Title>
+                      <Styled.Description>{description}</Styled.Description>
+                    </Styled.Content>
+                    <Styled.Tags>
+                      {tags.map(item => (
+                        <Styled.Tag key={item}>{item}</Styled.Tag>
+                      ))}
+                    </Styled.Tags>
+                  </motion.div>
+                </Link>
+              </Styled.BlogCard>
+            )
+          })}
+        </Styled.Posts>
+      </Styled.Wrapper>
     </Styled.Container>
   )
 }
 
-export default Posts
+export default MyPosts

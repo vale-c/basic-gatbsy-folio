@@ -8,7 +8,7 @@ import ProjectCard from '../components/ProjectCard'
 
 // Elements
 import Inner from '../elements/Inner'
-import { Title, BigTitle, Subtitle } from '../elements/Titles'
+import { Title, Greeting, Name, Subtitle } from '../elements/Titles'
 
 // Views
 import Hero from '../views/Hero'
@@ -16,7 +16,7 @@ import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
-import avatar from '../assets/images/avatar.jpg'
+import Image from '../components/Image'
 
 import HeaderNav from '../components/HeaderNav'
 
@@ -38,24 +38,20 @@ const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
 `
 
-const Avatar = styled.img`
-  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
-`
-
 const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl pt-6 md:pt-12 text-justify`};
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-grey-light text-xl md:text-2xl lg:text-3xl`};
 `
 
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  ${tw`text-center text-grey absolute pin-b p-6 text-md lg:text-lg`};
 `
 const Layout = styled.div``
 
@@ -65,11 +61,12 @@ const Index = () => (
     <HeaderNav />
     <Parallax pages={5}>
       <Hero offset={0}>
-        <BigTitle>
-          Hey, <br /> I'm Valentina.
-        </BigTitle>
+        <Greeting>
+          Hey 👋🏻 <br />
+          <Name>I'm Valentina.</Name>
+        </Greeting>
         <Subtitle>
-          I design and shape digital products and bring 'em to life through
+          I design and shape digital products and bring them to life through
           code.
         </Subtitle>
       </Hero>
@@ -111,28 +108,20 @@ const Index = () => (
       <About offset={3}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
+          <Image />
           <AboutSub>
-            The English language can not fully capture the depth and complexity
-            of my thoughts. So I'm incorporating Emoji into my speech to better
-            express myself. Winky face.
+            Welcome to my personal portfolio website, the digital space where I
+            share about my most recent projects & design creations and I also
+            write about Tech.
           </AboutSub>
         </AboutHero>
-        <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding
-          hands? That's how you're gonna feel every day. My mother cried the day
-          I was born because she knew she’d never be prettier than me. You
-          should make me your campaign manager. I was born for politics. I have
-          great hair and I love lying. Captain? The kids want to know where
-          Paulie the Pigeon is. I told them he got sucked up into an airplane
-          engine, is that all right?
-        </AboutDesc>
+        <AboutDesc></AboutDesc>
       </About>
       <Contact offset={4}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on
+            Say <a href="mailto:frontendvale@gmail.com">Hi</a> or find me on
             other platforms:{' '}
             <a href="https://dribbble.com/blueberrymuffin95" target="_blank">
               Dribbble
@@ -144,11 +133,14 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Valentina Calabrese.{' '}
-          <a href="https://www.frontendvale.me" target="_blank">
-            My Personal Blog
+          © {new Date().getFullYear()}, Built with ☕ & 💖 by
+          <a
+            href="https://www.valentinacalabrese.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {` `}Vale
           </a>
-          .
         </Footer>
       </Contact>
     </Parallax>

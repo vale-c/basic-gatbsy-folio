@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { motion } from "framer-motion"
+import styled from 'styled-components'
+import { Link } from 'gatsby'
+import { motion } from 'framer-motion'
 
 export const HeaderNavContainer = styled.div`
   ${tw`p-8`};
@@ -11,7 +11,7 @@ export const MainNav = styled.nav`
 `
 
 export const MainNavItem = motion.custom(styled(Link)`
-  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
+  ${tw`text-lg relative border-b border-transparent ml-0 sm:ml-8 mt-3 sm:mt-0`};
   width: max-content;
 
   ${tw`ml-6`}
@@ -53,12 +53,12 @@ export const ToogleMainNav = styled.button`
 
     &:first-child {
       ${({ open }) => (open ? tw`-mb-px` : tw`mb-1`)};
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "none")};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'none')};
     }
 
     &:last-child {
       ${({ open }) => (open ? tw`-mt-px` : tw`mt-1`)};
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "none")};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'none')};
     }
 
     &:nth-child(2) {
@@ -66,7 +66,7 @@ export const ToogleMainNav = styled.button`
       ${tw`inline-block w-8 h-px`};
 
       ${({ open }) => (open ? tw`opacity-0` : tw`opacity-1`)};
-      transform: ${({ open }) => (open ? "translate(20px)" : "none")};
+      transform: ${({ open }) => (open ? 'translate(20px)' : 'none')};
     }
   }
 `

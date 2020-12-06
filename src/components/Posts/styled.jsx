@@ -4,13 +4,23 @@ import tw from 'tailwind.macro'
 export const Container = styled.div`
   ${tw`container my-12 mx-auto px-4 md:px-12`}
 `
+
 export const Posts = styled.div`
-  ${tw`grid grid-cols-3 gap-4`};
+  ${tw`flex flex-wrap justify-between mt-8`};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
 `
 
-export const Post = styled.div`
-  border: 2px solid ${({ theme }) => theme.fontAccent};
-  ${tw`overflow-hidden rounded-lg shadow-lg`};
+export const BlogCard = styled.div`
+  ${tw`shadow-lg relative no-underline rounded-lg`};
 `
 
 export const Content = styled.div`
@@ -44,3 +54,5 @@ export const Tag = styled.span`
   ${tw`mb-2 text-xs font-bold rounded-full px-2 py-1 mr-2`}
   border: 1px solid ${({ theme }) => theme.fontAccent};
 `
+
+export const Wrapper = styled.div``
