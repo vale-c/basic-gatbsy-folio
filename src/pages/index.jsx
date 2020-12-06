@@ -46,13 +46,14 @@ const AboutDesc = styled.p`
   ${tw`text-lg md:text-xl lg:text-2xl pt-6 md:pt-12 text-justify`};
 `
 
-const ContactText = styled.p`
-  ${tw`text-xl md:text-2xl lg:text-3xl`};
-`
 export const ContactTitle = styled.h1`
   ${tw`text-4xl lg:text-4xl mb-8 tracking-wide relative inline-block`}
   color: ${({ theme }) => theme.description};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+`
+
+const ContactText = styled.p`
+  ${tw`text-xl md:text-2xl lg:text-3xl`};
 `
 
 export const InnerCardText = styled.p`
@@ -63,11 +64,9 @@ export const InnerCardText = styled.p`
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 text-md lg:text-lg`};
 `
-const Layout = styled.div``
 
 const Index = () => (
   <>
-    <Layout />
     <HeaderNav />
     <Parallax pages={5}>
       <Hero offset={0}>

@@ -17,25 +17,31 @@ const Hero = ({ children, offset }) => (
     <Divider speed={0.2} offset={offset}>
       <UpDown>
         <SVG
-          icon="triangle"
+          icon="search"
           hiddenMobile
           width={48}
-          stroke={colors.orange}
-          left="10%"
+          stroke={colors.pink}
+          left="5%"
           top="20%"
         />
-        <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
         <SVG
-          icon="box"
-          width={6}
-          fill={colors['grey-darker']}
+          icon="send"
+          width={48}
+          stroke={colors['blue-light']}
+          left="60%"
+          top="70%"
+        />
+        <SVG
+          icon="volumeUp"
+          width={16}
+          fill={colors['grey-dark']}
           left="60%"
           top="15%"
         />
       </UpDown>
       <UpDownWide>
         <SVG
-          icon="arrowUp"
+          icon="notification"
           hiddenMobile
           width={16}
           fill={colors['blue-dark']}
@@ -43,44 +49,44 @@ const Hero = ({ children, offset }) => (
           top="10%"
         />
         <SVG
-          icon="triangle"
+          icon="work"
           width={12}
           stroke={colors.white}
           left="90%"
           top="50%"
         />
         <SVG
-          icon="circle"
+          icon="search"
           width={16}
           fill={colors['grey-darker']}
           left="70%"
           top="90%"
         />
         <SVG
-          icon="triangle"
+          icon="ticket"
           width={16}
           stroke={colors['grey-darkest']}
           left="30%"
           top="65%"
         />
         <SVG
-          icon="circle"
+          icon="heart"
           width={6}
-          fill={colors['grey-darkest']}
+          fill={colors['red-light']}
           left="75%"
           top="10%"
         />
         <SVG
-          icon="upDown"
+          icon="ticketStar"
           hiddenMobile
           width={8}
-          fill={colors['grey-darkest']}
+          fill={colors['grey-dark']}
           left="45%"
           top="10%"
         />
       </UpDownWide>
       <SVG
-        icon="circle"
+        icon="paper"
         hiddenMobile
         width={24}
         fill={colors['grey-darker']}
@@ -88,28 +94,28 @@ const Hero = ({ children, offset }) => (
         top="70%"
       />
       <SVG
-        icon="circle"
+        icon="chart"
         width={6}
         fill={colors['grey-darkest']}
         left="4%"
         top="20%"
       />
       <SVG
-        icon="circle"
+        icon="profile"
         width={12}
         fill={colors['grey-darkest']}
         left="50%"
         top="60%"
       />
       <SVG
-        icon="upDown"
+        icon="heart"
         width={8}
         fill={colors['grey-darkest']}
         left="95%"
         top="90%"
       />
       <SVG
-        icon="upDown"
+        icon="chart"
         hiddenMobile
         width={24}
         fill={colors['grey-darker']}
@@ -117,7 +123,7 @@ const Hero = ({ children, offset }) => (
         top="80%"
       />
       <SVG
-        icon="triangle"
+        icon="star"
         width={8}
         stroke={colors['grey-darker']}
         left="25%"
@@ -125,7 +131,7 @@ const Hero = ({ children, offset }) => (
       />
       <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
       <SVG
-        icon="box"
+        icon="game"
         hiddenMobile
         width={64}
         fill={colors.purple}
@@ -133,28 +139,28 @@ const Hero = ({ children, offset }) => (
         top="90%"
       />
       <SVG
-        icon="box"
+        icon="paper"
         width={6}
         fill={colors['grey-darkest']}
         left="10%"
         top="10%"
       />
       <SVG
-        icon="box"
+        icon="chat"
         width={12}
-        fill={colors['grey-darkest']}
+        fill={colors['grey-light']}
         left="40%"
         top="30%"
       />
       <SVG
-        icon="hexa"
+        icon="setting"
         width={16}
         stroke={colors['grey-darker']}
         left="10%"
         top="50%"
       />
       <SVG
-        icon="hexa"
+        icon="chat"
         width={8}
         stroke={colors['grey-darker']}
         left="80%"
