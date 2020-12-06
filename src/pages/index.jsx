@@ -49,6 +49,16 @@ const AboutDesc = styled.p`
 const ContactText = styled.p`
   ${tw`text-xl md:text-2xl lg:text-3xl`};
 `
+export const ContactTitle = styled.h1`
+  ${tw`text-4xl lg:text-4xl mb-8 tracking-wide relative inline-block`}
+  color: ${({ theme }) => theme.description};
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+`
+
+export const InnerCardText = styled.p`
+  ${tw`text-white`}
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+`
 
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 text-md lg:text-lg`};
@@ -76,33 +86,39 @@ const Index = () => (
           <ProjectCard
             title="Classically"
             link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
-            bg="linear-gradient(to right, #E23145 0%, #9E3443 100%)"
+            bg="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
           >
-            This project is a concept for an educational app about classical
-            music.
+            <InnerCardText>
+              This project is a concept for an educational app about classical
+              music.
+            </InnerCardText>
           </ProjectCard>
           <ProjectCard
             title="Fontsy"
             link="https://dribbble.com/shots/4307574-Fancy-Fonts"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            A fancy paywall for a photo editing app specialized in adding
-            gorgeous texts to your images.
+            <InnerCardText>
+              A fancy paywall for a photo editing app specialized in adding
+              gorgeous texts to your images.
+            </InnerCardText>
           </ProjectCard>
           <ProjectCard
             title="Safe-fi"
             link="https://dribbble.com/shots/4307518-Secured"
-            bg="linear-gradient(to right, #5EC2FE 0%, #12304A 100%)"
+            bg="linear-gradient(to right, #2c3e50 0%, #3498db 100%)"
           >
-            This is a paywall mockup for a VPN app allowing people to surf the
-            Web in a more secure way.
+            <InnerCardText>
+              This is a paywall mockup for a VPN app allowing people to surf the
+              Web in a more secure way.
+            </InnerCardText>
           </ProjectCard>
           <ProjectCard
             title="Booksmart"
             link="https://dribbble.com/shots/7134623-Bookstore-App-Concept"
-            bg="linear-gradient(to right, #A74276 0%, #6A679B 100%)"
+            bg="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
           >
-            Concept for a Bookstore Mobile App
+            <InnerCardText>Concept for a Bookstore Mobile App</InnerCardText>
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -120,7 +136,7 @@ const Index = () => (
       </About>
       <Contact offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
+          <ContactTitle>Get in touch</ContactTitle>
           <ContactText>
             Say <a href="mailto:frontendvale@gmail.com">Hi</a> or find me on
             other platforms:{' '}

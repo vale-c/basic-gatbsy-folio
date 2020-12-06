@@ -4,8 +4,7 @@ import { rotateAnimation } from '../styles/animations'
 import triangle from '../assets/images/triangle.svg'
 
 export const Title = styled.h1`
-  color: ${({ theme }) => theme.description};
-  ${tw`text-4xl lg:text-4xl mb-8 tracking-wide relative inline-block`};
+  ${tw`text-4xl lg:text-4xl text-white mb-8 tracking-wide relative inline-block`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
@@ -32,6 +31,5 @@ export const Name = styled.h1`
 
 export const Subtitle = styled.p`
   ${tw`text-2xl lg:text-4xl mt-8 xxl:w-3/4`};
-  color: ${({ theme }) => theme.description};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `

@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 
 const Wrapper = styled.a`
   width: 100%;
-  border: 2px solid ${({ theme }) => theme.fontAccent};
+  border: 2px solid ${props => props.bg};
   ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24`};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -15,14 +15,12 @@ const Wrapper = styled.a`
 `
 
 const Text = styled.div`
-  color: ${({ theme }) => theme.description};
   ${tw`opacity-85 text-sm md:text-base`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
 const Title = styled.div`
-  color: ${({ theme }) => theme.description};
-  ${tw`uppercase text-3xl md:text-3xl xl:text-4xl tracking-wide pt-8`};
+  ${tw`uppercase text-white text-3xl md:text-3xl xl:text-4xl tracking-wide pt-8`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
