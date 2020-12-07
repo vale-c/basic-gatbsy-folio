@@ -10,12 +10,8 @@ export const Title = styled.h1`
   ${tw`font-bold text-xl mt-2 mb-4`};
 `
 
-export const Image = styled(Img)`
-  ${tw`w-full rounded-lg overflow-hidden mt-4 mb-10 mx-auto`};
-`
-
 export const ImgWrapper = styled.div`
-  ${tw`text-center`}
+  ${tw`w-full rounded-lg overflow-hidden mt-4 mb-10 mx-auto text-center`}
 `
 
 export const Links = styled.div`
@@ -24,7 +20,4 @@ export const Links = styled.div`
 
 export const ProjectLink = styled(Link)`
   ${tw`hover:underline`};
-`
-export const Wrapper = styled.div`
-  ${tw`px-24`}
 `

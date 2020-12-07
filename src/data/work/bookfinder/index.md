@@ -1,7 +1,7 @@
 ---
 category: 'work'
 cover: './book-finder-app.png'
-title: 'Book Finder'
+title: 'Book Finder 📗'
 description: 'A Book Finder App'
 tags: ['React.js', 'SPA']
 published: true
@@ -11,10 +11,10 @@ I built this Book Finder Web App using [React.js](https://reactjs.org/), and int
 
 <br></br>
 
-## Github Repo
+## Github Repo 🤓
 
 [Code here](https://github.com/vale-c/ReactJS_BookFinder).
 
-## Live Demo
+## Live Demo ✨
 
 [Live Demo here](https://bookfinderapp.netlify.com/).

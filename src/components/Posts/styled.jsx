@@ -54,5 +54,3 @@ export const Tag = styled.span`
   ${tw`mb-2 text-xs font-bold rounded-full px-2 py-1 mr-2`}
   border: 1px solid ${({ theme }) => theme.fontAccent};
 `
-
-export const Wrapper = styled.div``

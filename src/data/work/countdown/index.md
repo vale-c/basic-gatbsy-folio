@@ -1,7 +1,7 @@
 ---
 category: 'work'
 cover: './countdown.png'
-title: 'Countdown'
+title: 'Countdown ⏲️'
 description: 'Countdown Application'
 tags: ['React.js', 'SPA']
 published: true
@@ -15,10 +15,10 @@ You can visit the live demo here, and find the full repo with the code here.
 
 <br>
 
-## Github Repo
+## Github Repo 🤓
 
 [Code here](https://github.com/vale-c/CountdownApp).
 
-## Live Demo
+## Live Demo ✨
 
 [Live Demo here](https://reactjscountdownapp.netlify.com/).

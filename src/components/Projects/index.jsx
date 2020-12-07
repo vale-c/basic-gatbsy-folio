@@ -44,43 +44,41 @@ const Projects = () => {
 
   return (
     <Styled.Container>
-      <Styled.Wrapper>
-        <Styled.TitleSection
-          title={projectSectionTitle.title}
-          subtitle={projectSectionTitle.subtitle}
-          center
-        />
-        <Styled.Projects>
-          {projects.map(item => {
-            const {
-              id,
-              fields: { slug },
-              frontmatter: { title, description, tags },
-            } = item.node
+      <Styled.TitleSection
+        title={projectSectionTitle.title}
+        subtitle={projectSectionTitle.subtitle}
+        center
+      />
+      <Styled.Projects>
+        {projects.map(item => {
+          const {
+            id,
+            fields: { slug },
+            frontmatter: { title, description, tags },
+          } = item.node
 
-            return (
-              <ProjectCard key={id}>
-                <Link to={slug}>
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whiletap={{ scale: 0.95 }}
-                  >
-                    <Styled.Content>
-                      <Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{description}</Styled.Description>
-                    </Styled.Content>
-                    <Styled.Tags>
-                      {tags.map(item => (
-                        <Styled.Tag key={item}>{item}</Styled.Tag>
-                      ))}
-                    </Styled.Tags>
-                  </motion.div>
-                </Link>
-              </ProjectCard>
-            )
-          })}
-        </Styled.Projects>
-      </Styled.Wrapper>
+          return (
+            <ProjectCard key={id}>
+              <Link to={slug}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whiletap={{ scale: 0.95 }}
+                >
+                  <Styled.Content>
+                    <Styled.Title>{title}</Styled.Title>
+                    <Styled.Description>{description}</Styled.Description>
+                  </Styled.Content>
+                  <Styled.Tags>
+                    {tags.map(item => (
+                      <Styled.Tag key={item}>{item}</Styled.Tag>
+                    ))}
+                  </Styled.Tags>
+                </motion.div>
+              </Link>
+            </ProjectCard>
+          )
+        })}
+      </Styled.Projects>
     </Styled.Container>
   )
 }

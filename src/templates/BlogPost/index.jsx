@@ -1,11 +1,27 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 
 import rehypeReact from 'rehype-react'
 import * as Styled from './styled'
+
+const NonStretchedImage = props => {
+  let normalizedProps = props
+  if (props.fluid && props.fluid.presentationWidth) {
+    normalizedProps = {
+      ...props,
+      style: {
+        ...(props.style || {}),
+        maxWidth: props.fluid.presentationWidth,
+        margin: '0 auto', // Used to center the image
+      },
+    }
+  }
+
+  return <Img {...normalizedProps} />
+}
 
 const Paragraph = ({ children }) => (
   <p className="mt-2 md:text-base sm:text-lg">{children}</p>
@@ -46,7 +62,10 @@ const BlogPost = ({
           <Styled.Time dateTime={date}>{formattedDate}</Styled.Time>
           <Styled.Title>{title}</Styled.Title>
           <Styled.ImgWrapper>
-            <Styled.Image fixed={cover.childImageSharp.fixed} alt={title} />
+            <NonStretchedImage
+              fluid={cover.childImageSharp.fluid}
+              alt={title}
+            />
           </Styled.ImgWrapper>
 
           <Paragraph>{renderAst(htmlAst)}</Paragraph>
@@ -83,8 +102,8 @@ export const query = graphql`
         formattedDate: date(formatString: "MMM DD, YYYY")
         cover {
           childImageSharp {
-            fixed(width: 500, height: 300, quality: 100) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 500, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

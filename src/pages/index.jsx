@@ -16,7 +16,7 @@ import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
-import Image from '../components/Image'
+import BitmojiImage from '../components/BitmojiImage'
 
 import HeaderNav from '../components/HeaderNav'
 
@@ -124,7 +124,7 @@ const Index = () => (
       <About offset={3}>
         <Title>About</Title>
         <AboutHero>
-          <Image />
+          <BitmojiImage />
           <AboutSub>
             Welcome to my personal portfolio website, the digital space where I
             share about my most recent projects & design creations and I also

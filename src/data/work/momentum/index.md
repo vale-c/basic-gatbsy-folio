@@ -1,7 +1,7 @@
 ---
 category: 'work'
 cover: './momentum.png'
-title: 'Momentum'
+title: 'Momentum 🖼️'
 description: 'My Momentum Dashboard Clone'
 tags: ['React.js', 'API', 'SPA']
 published: true
@@ -26,10 +26,10 @@ A while ago I decided I wanted to build a custom React Web App inspired by the M
 
 <br>
 
-## Github Repo
+## Github Repo 🤓
 
 [Code here](https://github.com/vale-c/Momentum).
 
-## Live Demo
+## Live Demo ✨
 
 [Live Demo here](https://momentumdash.netlify.com/).

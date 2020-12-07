@@ -3,9 +3,25 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
-
+import Img from 'gatsby-image'
 import rehypeReact from 'rehype-react'
 import * as Styled from './styled'
+
+const NonStretchedImage = props => {
+  let normalizedProps = props
+  if (props.fluid && props.fluid.presentationWidth) {
+    normalizedProps = {
+      ...props,
+      style: {
+        ...(props.style || {}),
+        maxWidth: props.fluid.presentationWidth,
+        margin: '0 auto', // Used to center the image
+      },
+    }
+  }
+
+  return <Img {...normalizedProps} />
+}
 
 const Paragraph = ({ children }) => <p className="mt-2">{children}</p>
 const ExternalLink = ({ href, children }) => (
@@ -40,29 +56,27 @@ const BlogPost = ({
     <Layout>
       <SEO title={title} />
       <Styled.Container>
-        <Styled.Wrapper>
-          <Styled.Title>{title}</Styled.Title>
-          <Styled.ImgWrapper>
-            <Styled.Image fixed={cover.childImageSharp.fixed} alt={title} />
-          </Styled.ImgWrapper>
-          <Paragraph>{renderAst(htmlAst)}</Paragraph>
-          <Styled.Links>
-            <span>
-              {previous && (
-                <Styled.ProjectLink to={previous.fields.slug} rel="previous">
-                  ← {previous.frontmatter.title}
-                </Styled.ProjectLink>
-              )}
-            </span>
-            <span>
-              {next && (
-                <Styled.ProjectLink to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Styled.ProjectLink>
-              )}
-            </span>
-          </Styled.Links>
-        </Styled.Wrapper>
+        <Styled.Title>{title}</Styled.Title>
+        <Styled.ImgWrapper>
+          <NonStretchedImage fluid={cover.childImageSharp.fluid} alt={title} />
+        </Styled.ImgWrapper>
+        <Paragraph>{renderAst(htmlAst)}</Paragraph>
+        <Styled.Links>
+          <span>
+            {previous && (
+              <Styled.ProjectLink to={previous.fields.slug} rel="previous">
+                ← {previous.frontmatter.title}
+              </Styled.ProjectLink>
+            )}
+          </span>
+          <span>
+            {next && (
+              <Styled.ProjectLink to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Styled.ProjectLink>
+            )}
+          </span>
+        </Styled.Links>
       </Styled.Container>
     </Layout>
   )
@@ -77,8 +91,8 @@ export const query = graphql`
         title
         cover {
           childImageSharp {
-            fixed(width: 500, quality: 100) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 500, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

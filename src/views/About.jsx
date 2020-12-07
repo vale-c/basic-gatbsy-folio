@@ -54,7 +54,7 @@ const About = ({ children, offset }) => (
           icon="arrowUpSquare"
           hiddenMobile
           width={16}
-          fill={colors['purple-light']}
+          fill={colors.purple}
           left="5%"
           top="80%"
         />
@@ -70,7 +70,7 @@ const About = ({ children, offset }) => (
           icon="wallet"
           hiddenMobile
           width={8}
-          fill={colors['grey-darkest']}
+          fill={colors['grey-dark']}
           left="45%"
           top="10%"
         />
@@ -87,7 +87,7 @@ const About = ({ children, offset }) => (
       <SVG
         icon="notification"
         width={12}
-        fill={colors['grey-darkest']}
+        fill={colors['grey-dark']}
         left="20%"
         top="30%"
       />

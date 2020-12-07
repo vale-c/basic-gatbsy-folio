@@ -1,7 +1,7 @@
 ---
 category: 'work'
 cover: './citystats-content.png'
-title: 'City Stats Explorer'
+title: 'City Stats Explorer 🏙️'
 description: 'City Stats Explorer'
 tags: ['React.js', 'API']
 published: true
@@ -15,10 +15,10 @@ I used Teleport’s API to fetch the city stats & data, and axios as a tool to p
 
 <br>
 
-## Github Repo
+## Github Repo 🤓
 
 [Code here](https://github.com/vale-c/CityStatsExplorer).
 
-## Live Demo
+## Live Demo ✨
 
 [Live Demo here](https://citystats.netlify.com/).
