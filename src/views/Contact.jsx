@@ -21,7 +21,7 @@ const InnerWave = styled.div`
     height: 40vh;
   }
   path {
-    ${waveAnimation('20s')};
+    ${waveAnimation('5s')};
   }
 `
 
