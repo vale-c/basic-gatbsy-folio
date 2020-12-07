@@ -34,7 +34,7 @@ const Hero = ({ children, offset }) => (
         <SVG
           icon="volumeUp"
           width={16}
-          fill={colors.grey}
+          fill={colors['orange-light']}
           left="60%"
           top="15%"
         />
@@ -100,7 +100,13 @@ const Hero = ({ children, offset }) => (
         left="4%"
         top="20%"
       />
-      <SVG icon="profile" width={12} fill={colors.grey} left="50%" top="60%" />
+      <SVG
+        icon="play"
+        width={12}
+        fill={colors['grey-dark']}
+        left="50%"
+        top="60%"
+      />
       <SVG
         icon="heart"
         width={8}
@@ -119,11 +125,11 @@ const Hero = ({ children, offset }) => (
       <SVG
         icon="star"
         width={8}
-        stroke={colors['grey-darker']}
+        stroke={colors['yellow-light']}
         left="25%"
         top="5%"
       />
-      <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
+      <SVG icon="setting" width={64} fill={colors.green} left="95%" top="5%" />
       <SVG
         icon="game"
         hiddenMobile

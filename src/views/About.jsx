@@ -65,7 +65,13 @@ const About = ({ children, offset }) => (
           left="95%"
           top="50%"
         />
-        <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
+        <SVG
+          icon="bookmark"
+          width={6}
+          fill={colors.white}
+          left="85%"
+          top="15%"
+        />
         <SVG
           icon="wallet"
           hiddenMobile
@@ -75,9 +81,9 @@ const About = ({ children, offset }) => (
           top="10%"
         />
       </UpDownWide>
-      <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
+      <SVG icon="star" width={6} fill={colors.white} left="4%" top="20%" />
       <SVG
-        icon="profile"
+        icon="play"
         width={12}
         fill={colors['grey-darkest']}
         left="70%"

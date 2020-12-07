@@ -117,7 +117,7 @@ const Index = () => (
             link="https://dribbble.com/shots/7134623-Bookstore-App-Concept"
             bg="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
           >
-            <InnerCardText>Concept for a Bookstore Mobile App</InnerCardText>
+            <InnerCardText>A concept for a Bookstore Mobile App.</InnerCardText>
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>

@@ -108,7 +108,7 @@ const Contact = ({ children, offset }) => (
         top="30%"
       />
       <SVG
-        icon="profile"
+        icon="play"
         width={8}
         stroke={colors['grey-darkest']}
         left="80%"

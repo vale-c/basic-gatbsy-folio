@@ -70,7 +70,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favico.svg`, // This path is relative to the root of the site.
       },
     },
     {
