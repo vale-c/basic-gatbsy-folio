@@ -17,4 +17,4 @@ I built this Book Finder Web App using [React.js](https://reactjs.org/), and int
 
 ## Live Demo ✨
 
-[Live Demo here](https://bookfinderapp.netlify.com/).
+[Live Demo here](https://findabook.netlify.com/).
