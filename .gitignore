@@ -77,3 +77,6 @@ yarn-error.log
 
 # Local History for Visual Studio Code
 .history/
+
+# Webstorm Stuff
+.idea/

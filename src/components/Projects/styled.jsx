@@ -8,7 +8,7 @@ export const Projects = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
