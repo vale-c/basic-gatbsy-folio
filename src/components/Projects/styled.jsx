@@ -7,14 +7,19 @@ export const Container = styled.div`
 export const Projects = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(3, 1fr);
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+  }
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 `
 

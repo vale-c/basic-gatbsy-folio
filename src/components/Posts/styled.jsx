@@ -8,19 +8,25 @@ export const Container = styled.div`
 export const Posts = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(3, 1fr);
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
   @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 `
 
 export const BlogCard = styled.div`
-  ${tw`shadow-lg relative no-underline rounded-lg`};
+  ${tw`shadow-lg relative no-underline rounded-sm`};
+  border: 1px solid ${({ theme }) => theme.fontAccent};
 `
 
 export const Content = styled.div`
@@ -36,6 +42,7 @@ export const TitleSection = styled.h3`
 
 export const Image = styled.figure`
   ${tw`w-full`};
+  border-radius: 50%;
 `
 
 export const Date = styled.h3`
