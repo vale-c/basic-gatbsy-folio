@@ -12,7 +12,6 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.backgroundColor};
         text-rendering: optimizeLegibility;
         overflow-x: hidden;
-        overflow-y: hidden;
         box-sizing: border-box;
         -ms-overflow-style: scrollbar;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
