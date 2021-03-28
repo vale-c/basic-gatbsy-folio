@@ -44,7 +44,10 @@ const Terminal = () => {
           <Styled.Spacer />
           <Styled.Content>
             Check out my CV{' '}
-            <a href="https://resume.io/r/KAIMbk" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1KuUXFsLMpienqYGFez8dGDw7EIqUubBm/view?usp=sharing"
+              target="_blank"
+            >
               here
             </a>
             .{' '}

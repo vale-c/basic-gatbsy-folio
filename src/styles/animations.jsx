@@ -27,7 +27,7 @@ const upDown = keyframes`
     transform: translateY(0);
   }
   to {
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
 `
 

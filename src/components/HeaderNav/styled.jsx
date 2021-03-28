@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 
 export const HeaderNavContainer = styled.div`
   ${tw`p-8`};
+  z-index: 999;
 `
 export const MainNav = styled.nav`
   ${tw`justify-end sm:flex flex-col sm:flex-row sm:w-auto w-full order-last sm:order-none my-4 sm:my-0 hidden`};
