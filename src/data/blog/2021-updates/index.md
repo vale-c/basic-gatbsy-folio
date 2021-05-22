@@ -23,6 +23,7 @@ Having less time at hand paradoxically makes you value the time you have much mo
 &nbsp;
 
 • Think about **users** first anytime you're thinking about creating a new interface for a product.
+
 • Ask yourself the right **questions** early on, and **iterate** as much as possible to refine the feedback cycle and come up with creative alternative solutions.
 
 • [**Brainstorming**](https://dl.acm.org/doi/10.1145/2470654.2466177) is important, and you have to take it as a creative exercise as inserting a "random" element can actually allow you to think outside the box and find new ways to tackle a certain problem.
