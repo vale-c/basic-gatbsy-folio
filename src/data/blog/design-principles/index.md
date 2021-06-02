@@ -3,7 +3,7 @@ category: 'blog'
 cover: './design-principles.jpg'
 title: 'Design Principles 🎨 and why they matter (a lot)'
 description: 'Quick updates about OMSCS & HCI.'
-date: '2021-02-06'
+date: '2021-06-02'
 tags: ['Design Principles', 'Design Systems', 'UX', 'UI', '🎨']
 published: true
 ---
@@ -38,6 +38,7 @@ They tell a lot about the way Spotify thinks about product, how they want to pre
 The last principle *"Lagom"* is actually a cool Swedish word for "just enough", which is like a common way of life to indicate the need for the perfect balance when it comes to things.
 
 If we were to point out what makes for great Design Principles we could confidently borrow Alla Kholmatova's principles as an interesting starting point *(they're included in her [book](https://www.amazon.com/Design-Systems-practical-creating-languages/dp/3945749581) "Design Systems. A Practical Guide To Creating Design Languages for Digital Products").*
+
 
 **Great Design Principles**
 
