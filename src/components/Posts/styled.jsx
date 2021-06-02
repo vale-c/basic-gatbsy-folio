@@ -25,12 +25,12 @@ export const Posts = styled.div`
 `
 
 export const BlogCard = styled.div`
-  ${tw`shadow-lg relative no-underline rounded-sm`};
+  ${tw`shadow-lg relative no-underline rounded-smgit aZZ`};
   border: 1px solid ${({ theme }) => theme.fontAccent};
 `
 
 export const Content = styled.div`
-  ${tw`p-4`};
+  ${tw`p-6`};
 `
 
 export const Title = styled.h3`
@@ -38,11 +38,6 @@ export const Title = styled.h3`
 `
 export const TitleSection = styled.h3`
   ${tw`font-semibold mb-4`};
-`
-
-export const Image = styled.figure`
-  ${tw`w-full`};
-  border-radius: 50%;
 `
 
 export const Date = styled.h3`
