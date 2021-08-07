@@ -22,7 +22,6 @@ export const Posts = styled.div`
   @media (max-width: 797px) {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    ${tw`px-8`};
   }
 `
 
