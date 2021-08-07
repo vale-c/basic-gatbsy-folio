@@ -65,26 +65,28 @@ const MyPosts = () => {
           } = item.node
 
           return (
-            <motion.div
-            whileHover={{ scale: 1.05 }}
-            whiletap={{ scale: 0.95 }}
-          >
-            <Styled.BlogCard key={id}>
-              <Link to={slug}>
-                <Img fluid={cover.childImageSharp.fluid} alt={title} imgStyle={{ objectFit: "contain" }}  style={{ height: "100%", width: "100%" }} />
+            <motion.div whileHover={{ scale: 1.05 }} whiletap={{ scale: 0.95 }}>
+              <Styled.BlogCard key={id}>
+                <Link to={slug}>
+                  <Img
+                    fluid={cover.childImageSharp.fluid}
+                    alt={title}
+                    imgStyle={{ objectFit: 'cover' }}
+                    style={{ height: '50%', width: '100%' }}
+                  />
                   <Styled.Content>
                     <Styled.Date>{date}</Styled.Date>
                     <Styled.Title>{title}</Styled.Title>
                     <Styled.Description>{description}</Styled.Description>
                   </Styled.Content>
                   <Styled.Tags>
-                  {tags.map(item => (
-                    <Styled.Tag key={item}>{item}</Styled.Tag>
-                  ))}
+                    {tags.map(item => (
+                      <Styled.Tag key={item}>{item}</Styled.Tag>
+                    ))}
                   </Styled.Tags>
-              </Link>
-            </Styled.BlogCard>
-          </motion.div>
+                </Link>
+              </Styled.BlogCard>
+            </motion.div>
           )
         })}
       </Styled.Posts>

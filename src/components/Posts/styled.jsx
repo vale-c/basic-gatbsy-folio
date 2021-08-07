@@ -4,6 +4,9 @@ import tw from 'tailwind.macro'
 export const Container = styled.div`
   ${tw`container my-12 mx-auto px-4 md:px-12`}
 `
+export const TitleSection = styled.h3`
+  ${tw`font-semibold mb-4`};
+`
 
 export const Posts = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -25,30 +28,30 @@ export const Posts = styled.div`
 `
 
 export const BlogCard = styled.div`
-  ${tw`shadow-lg relative no-underline rounded-smgit aZZ`};
+  ${tw`shadow-lg no-underline rounded-sm overflow-hidden mb-32`};
   border: 1px solid ${({ theme }) => theme.fontAccent};
+  height: 100%;
 `
 
 export const Content = styled.div`
   ${tw`p-6`};
 `
 
-export const Title = styled.h3`
-  ${tw`text-md font-semibold mb-4`};
-`
-export const TitleSection = styled.h3`
-  ${tw`font-semibold mb-4`};
-`
-
-export const Date = styled.h3`
-  ${tw`text-xs`};
+export const Date = styled.div`
+  ${tw`text-sm font-light mb-2`};
   color: ${({ theme }) => theme.description};
 `
 
-export const Description = styled.p``
+export const Title = styled.div`
+  ${tw`text-lg font-semibold mb-4`};
+`
+
+export const Description = styled.p`
+  ${tw`text-sm font-medium mb-4`};
+`
 
 export const Tags = styled.div`
-  ${tw`flex flex-wrap p-4 pt-2 mt-auto overflow-hidden`}
+  ${tw`flex flex-wrap p-4 mt-auto`}
 `
 
 export const Tag = styled.span`
