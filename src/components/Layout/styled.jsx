@@ -5,7 +5,7 @@ export const Layout = styled.main`
   display: grid;
   grid-template-columns:
     1fr
-    min(65ch, 100%)
+    min(95ch, 100%)
     1fr;
   
   & > * {
