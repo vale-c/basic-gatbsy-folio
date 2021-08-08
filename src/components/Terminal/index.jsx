@@ -15,7 +15,7 @@ const Terminal = () => {
           <Styled.Paragraph>
             Last login: Wed Sep 25 09:11:04 on ttys002
           </Styled.Paragraph>
-          <Styled.TContent>Vale$</Styled.TContent>
+          <Styled.TContent>$Vale$</Styled.TContent>
           <Styled.Spacer />
           <Styled.Spacer />
           <Styled.Content>
@@ -45,7 +45,7 @@ const Terminal = () => {
           <Styled.Content>
             Check out my CV{' '}
             <a
-              href="https://drive.google.com/file/d/1KuUXFsLMpienqYGFez8dGDw7EIqUubBm/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BWQfwZdzvKgJEWsxtYdsTVaXvOQ8YwqN/view?usp=sharing"
               target="_blank"
             >
               here
