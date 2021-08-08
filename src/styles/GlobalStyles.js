@@ -65,11 +65,8 @@ export default createGlobalStyle`
         font-family: 'GT Walsheim light', monospace;
         text-decoration: none;
     }
-
-    .react-toggle--checked,
-    .react-toggle-track,
-    .react-toggle--checked:hover,
+    
     .react-toggle-track {
-        background-color: ${({ theme }) => theme.toggle};
+      background: ${({ theme }) => theme.toggle };
     }
 `

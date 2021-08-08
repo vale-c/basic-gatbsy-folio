@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as Styled from './styled'
 
-const CTA = () => (
+const HeroText = () => (
   <Styled.Container>
     <Styled.HeadingOne>I design</Styled.HeadingOne>
     <Styled.HeadingTwo>& create </Styled.HeadingTwo>
@@ -11,4 +11,4 @@ const CTA = () => (
   </Styled.Container>
 )
 
-export default CTA
+export default HeroText

@@ -5,8 +5,8 @@ const lightTheme = {
   fontAccent: defaultColors['indigo'],
   underlineAccent: defaultColors['indigo-lighter'],
   description: defaultColors['grey-darkest'],
-  toggle: defaultColors['indigo-dark'],
   borderAccent: defaultColors['grey-light'],
+  toggle: defaultColors['indigo-light'],
   neumorphShadowOne: '#666666',
   neumorphShadowTwo: defaultColors['white'],
 }
@@ -16,8 +16,8 @@ const darkTheme = {
   fontAccent: defaultColors['green-light'],
   underlineAccent: defaultColors['green-lighter'],
   description: defaultColors['white'],
-  toggle: defaultColors['black'],
   borderAccent: defaultColors['white'],
+  toggle: defaultColors['grey-dark'],
   neumorphShadowOne: '#071017',
   neumorphShadowTwo: '#1d405d',
 }
