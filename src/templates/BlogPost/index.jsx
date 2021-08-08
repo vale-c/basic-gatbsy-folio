@@ -24,7 +24,7 @@ const NonStretchedImage = props => {
 }
 
 const Paragraph = ({ children }) => (
-  <p className="mt-2 md:text-base sm:text-lg">{children}</p>
+  <p className="mt-2 md:text-lg font-medium subpixel-antialiased">{children}</p>
 )
 const ExternalLink = ({ href, children }) => (
   <a
@@ -67,7 +67,6 @@ const BlogPost = ({
               alt={title}
             />
           </Styled.ImgWrapper>
-
           <Paragraph>{renderAst(htmlAst)}</Paragraph>
           <Styled.Links>
             <span>

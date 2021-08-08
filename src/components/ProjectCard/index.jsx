@@ -19,15 +19,9 @@ const Text = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
-const Title = styled.div`
-  ${tw`uppercase text-white text-3xl md:text-3xl xl:text-4xl tracking-wide pt-8`};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-`
-
 const ProjectCard = ({ title, link, children, bg }) => (
   <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
     <Text>{children}</Text>
-    <Title>{title}</Title>
   </Wrapper>
 )
 
@@ -38,5 +32,5 @@ ProjectCard.propTypes = {
   link: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
-  bg: PropTypes.string.isRequired,
+  bg: PropTypes.string,
 }

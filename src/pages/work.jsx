@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Projects from '../components/Projects'
 import tw from 'tailwind.macro'
+import Header from '../components/Header'
 
 const WorkWrapper = styled.div`
   ${tw`m-4`}
@@ -24,13 +24,12 @@ const StyledLink = styled(Link)`
 
 const Work = () => (
   <WorkWrapper>
-    <Layout>
-      <SEO title="Work" />
-      <Title>Personal Projects</Title>
-      <Subtitle>Check out some of my side-projects.</Subtitle>
-      <Projects />
-      <StyledLink to="/">🔙 Home</StyledLink>
-    </Layout>
+    <Header />
+    <SEO title="Work" />
+    <Title>Personal Projects</Title>
+    <Subtitle>Check out some of my side-projects.</Subtitle>
+    <Projects />
+    <StyledLink to="/">🔙 Home</StyledLink>
   </WorkWrapper>
 )
 

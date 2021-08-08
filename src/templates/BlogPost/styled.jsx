@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
 export const Container = styled.div`

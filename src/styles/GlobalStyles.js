@@ -4,7 +4,9 @@ import tw from 'tailwind.macro'
 import './typography.css'
 
 export default createGlobalStyle`
-    *, *:before, *:after {
+    *,
+    *:before, 
+    *:after {
         box-sizing: inherit;
     }
     
@@ -19,7 +21,8 @@ export default createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
 
-    html, body {
+    html, 
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
@@ -37,35 +40,35 @@ export default createGlobalStyle`
     }
 
     h1 {
-        font-family: 'GT Walsheim bold';
+        font-family: 'GT Walsheim bold', monospace;
         font-size: ${tw`text-4xl`};
     }
 
     h2 { 
-        font-family: 'GT Walsheim bold';
+        font-family: 'GT Walsheim bold', monospace;
         font-size: ${tw`text-3xl`};
     }
 
     h3, h4, h5, h6 {
-        font-family: 'GT Walsheim medium';
+        font-family: 'GT Walsheim medium', monospace;
         font-size: ${tw`text-2xl`};
     }
 
     p {
         color: ${({ theme }) => theme.description};
-        font-size: ${tw`text-xl`};
-        font-family: 'GT Walsheim light';
+        font-size: ${tw`text-md`};
+        font-family: 'GT Walsheim light', monospace;
     }
 
     a {
         font-size: ${tw`text-base`};
-        font-family: 'GT Walsheim light';
+        font-family: 'GT Walsheim light', monospace;
         text-decoration: none;
     }
 
-    .react-toggle--checked 
+    .react-toggle--checked,
     .react-toggle-track,
-    .react-toggle--checked:hover 
+    .react-toggle--checked:hover,
     .react-toggle-track {
         background-color: ${({ theme }) => theme.toggle};
     }

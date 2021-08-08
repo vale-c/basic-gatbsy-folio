@@ -10,29 +10,27 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import { motion, AnimatePresence } from 'framer-motion'
 
-import HeaderNav from '../HeaderNav'
+import Header from '../Header'
 
 import * as Styled from './styled'
 
 const Layout = ({ data, children }) => (
-  <>
-    <AnimatePresence exitBeforeEnter>
-      <Styled.Layout>
-        <HeaderNav siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <motion.div
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          {children}
-        </motion.div>
-      </Styled.Layout>
-    </AnimatePresence>
-  </>
+  <AnimatePresence exitBeforeEnter>
+    <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <Styled.Layout>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ delay: 0.2 }}
+      >
+        {children}
+      </motion.div>
+    </Styled.Layout>
+  </AnimatePresence>
 )
 
-export default function MyLayout(props) {
+const MyLayout = (props) => {
   return (
     <>
       <StaticQuery
@@ -60,3 +58,5 @@ Layout.propTypes = {
     }).isRequired,
   }).isRequired,
 }
+
+export default MyLayout;

@@ -47,7 +47,7 @@ const HeaderNav = () => {
         ))}
         <ToggleWrapper open={open}>
           <Toggle
-            defaultChecked={theme === 'dark' ? true : false}
+            defaultChecked={theme === 'dark'}
             onChange={toggleTheme}
             icons={{
               checked: (

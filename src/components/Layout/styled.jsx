@@ -1,7 +1,14 @@
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
 import '../../styles/typography.css'
 
 export const Layout = styled.main`
-  ${tw`flex flex-col min-h-screen`};
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+  
+  & > * {
+    grid-column: 2;
+  }
 `

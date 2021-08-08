@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Terminal from '../components/Terminal'
 import tw from 'tailwind.macro'
+import Header from '../components/Header'
 
 const Greeting = styled.h4`
   ${tw`text-xl`}
@@ -31,9 +31,9 @@ const StyledText = styled.div`
 `
 
 const About = () => (
-  <Layout>
+  <>
+    <Header />
     <SEO title="About Me" />
-    <Title>About me</Title>
     <Spacer />
     <Subtitle>
       <Greeting>
@@ -52,7 +52,7 @@ const About = () => (
     <Spacer />
     <Terminal />
     <BottomSpacer />
-  </Layout>
+  </>
 )
 
 export default About

@@ -18,7 +18,7 @@ import Contact from '../views/Contact'
 
 import BitmojiImage from '../components/BitmojiImage'
 
-import HeaderNav from '../components/HeaderNav'
+import Header from '../components/Header'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -67,7 +67,7 @@ const Footer = styled.footer`
 
 const Index = () => (
   <>
-    <HeaderNav />
+    <Header />
     <Parallax pages={5}>
       <Hero offset={0}>
         <Greeting>
@@ -93,14 +93,11 @@ const Index = () => (
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
-            title="Fontsy"
-            link="https://dribbble.com/shots/4307574-Fancy-Fonts"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            title="Winter Wonderland"
+            link="https://dribbble.com/shots/14815633-Ski-Mobile-App-Concept"
+            bg="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
           >
-            <InnerCardText>
-              A fancy paywall for a photo editing app specialized in adding
-              gorgeous texts to your images.
-            </InnerCardText>
+            <InnerCardText>A concept for a Ski Mobile App.</InnerCardText>
           </ProjectCard>
           <ProjectCard
             title="Safe-fi"
@@ -113,11 +110,14 @@ const Index = () => (
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
-            title="Booksmart"
-            link="https://dribbble.com/shots/7134623-Bookstore-App-Concept"
-            bg="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
+            title="Fontsy"
+            link="https://dribbble.com/shots/4307574-Fancy-Fonts"
+            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            <InnerCardText>A concept for a Bookstore Mobile App.</InnerCardText>
+            <InnerCardText>
+              A fancy paywall for a photo editing app specialized in adding
+              gorgeous texts to your images.
+            </InnerCardText>
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -126,12 +126,12 @@ const Index = () => (
         <AboutHero>
           <BitmojiImage />
           <AboutSub>
-            Welcome to my personal portfolio website, the digital space where I
-            share about my most recent projects & design creations and I also
+            Welcome to my portfolio, the digital space where I
+            share about some of my most recent projects & design creations and I also
             write about Tech.
           </AboutSub>
         </AboutHero>
-        <AboutDesc></AboutDesc>
+        <AboutDesc />
       </About>
       <Contact offset={4}>
         <Inner>
@@ -142,17 +142,26 @@ const Index = () => (
             me on:{' '}
             <a href="https://dribbble.com/blueberrymuffin95" target="_blank">
               Dribbble
-            </a>{' '}
-            &{' '}
+            </a>,
+            {' '}
             <a href="https://www.instagram.com/frontendvale/" target="_blank">
               Instagram
+            </a>,
+            {' '}
+            <a href="https://www.github.com/vale-c/" target="_blank">
+              GitHub
+            </a>
+            {' '}
+            or {' '}
+            <a href="https://www.twitter.com/CherriePie4897/" target="_blank">
+              Twitter
             </a>
           </ContactText>
         </Inner>
         <Footer>
           © {new Date().getFullYear()}, Built with ☕ & 💖 by
           <a
-            href="https://www.valentinacalabrese.com"
+            href="/about/"
             target="_blank"
             rel="noopener noreferrer"
           >

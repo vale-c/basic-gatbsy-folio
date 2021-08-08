@@ -1,10 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import tw from "tailwind.macro"
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import Header from '../components/Header'
 
 const Title = styled.h1`
   ${tw`text-2xl text-center`}
@@ -25,7 +25,8 @@ const ImgWrapper = styled.div`
 `
 
 const NotFoundPage = ({ data }) => (
-  <Layout>
+  <>
+    <Header />
     <SEO title="404: Not found" />
     <Title>404: Not Found</Title>
     <Spacer />
@@ -42,7 +43,7 @@ const NotFoundPage = ({ data }) => (
         />
       </ImgWrapper>
     </ContentWrapper>
-  </Layout>
+  </>
 )
 
 export default NotFoundPage
