@@ -26,8 +26,8 @@ export const Posts = styled.div`
 `
 
 export const BlogCard = styled.div`
-  ${tw`shadow-lg rounded`};
-  border: 1px solid ${({ theme }) => theme.fontAccent};
+  ${tw`shadow-lg rounded-lg`};
+  box-shadow: 25px 25px 100px ${({ theme }) => theme.neumorphShadowOne}, -25px -25px 100px ${({ theme }) => theme.neumorphShadowTwo};
   height: 100%;
 `
 

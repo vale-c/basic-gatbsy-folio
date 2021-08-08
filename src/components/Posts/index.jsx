@@ -72,7 +72,7 @@ const MyPosts = () => {
                     fluid={cover.childImageSharp.fluid}
                     alt={title}
                     imgStyle={{ objectFit: 'cover' }}
-                    style={{ height: '50%', width: '100%' }}
+                    style={{ height: '50%', width: '100%', borderTopLeftRadius: '.5rem', borderTopRightRadius: '.5rem' }}
                   />
                   <Styled.Content>
                     <Styled.Date>{date}</Styled.Date>

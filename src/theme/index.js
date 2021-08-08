@@ -1,12 +1,14 @@
 import { colors as defaultColors } from '../styles/colors'
 
 const lightTheme = {
-  backgroundColor: defaultColors['grey-lighter'],
+  backgroundColor: defaultColors['gray-lightest'],
   fontAccent: defaultColors['indigo'],
   underlineAccent: defaultColors['indigo-lighter'],
   description: defaultColors['grey-darkest'],
-  toggle: defaultColors['grey-light'],
+  toggle: defaultColors['indigo-dark'],
   borderAccent: defaultColors['grey-light'],
+  neumorphShadowOne: '#666666',
+  neumorphShadowTwo: defaultColors['white'],
 }
 
 const darkTheme = {
@@ -16,6 +18,8 @@ const darkTheme = {
   description: defaultColors['white'],
   toggle: defaultColors['black'],
   borderAccent: defaultColors['white'],
+  neumorphShadowOne: '#071017',
+  neumorphShadowTwo: '#1d405d',
 }
 
 export { lightTheme, darkTheme }
