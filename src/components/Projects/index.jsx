@@ -58,7 +58,7 @@ const Projects = () => {
           } = item.node
 
           return (
-            <ProjectCard key={id} title={title} link={slug}>
+            <ProjectCard key={id} link={slug}>
               <Link to={slug}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
