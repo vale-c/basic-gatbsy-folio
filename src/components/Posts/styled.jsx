@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const Container = styled.div`
-  ${tw`container my-12 mx-auto px-4 md:px-12`}
+  ${tw`container my-12 mx-auto py-8 px-4 md:px-12`}
 `
 export const TitleSection = styled.h3`
   ${tw`font-semibold mb-4`};
@@ -27,7 +27,7 @@ export const Posts = styled.div`
 
 export const BlogCard = styled.div`
   ${tw`shadow-lg rounded-lg`};
-  box-shadow: 25px 25px 100px ${({ theme }) => theme.neumorphShadowOne}, -25px -25px 100px ${({ theme }) => theme.neumorphShadowTwo};
+  box-shadow: ${({ theme }) => theme.neumorphShadowOne} 9.91px 9.91px 15px, ${({ theme }) => theme.neumorphShadowTwo} -9.91px -9.91px 15px;
   height: 100%;
 `
 

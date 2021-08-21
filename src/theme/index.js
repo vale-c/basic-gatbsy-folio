@@ -7,8 +7,8 @@ const lightTheme = {
   description: defaultColors['grey-darkest'],
   borderAccent: defaultColors['grey-light'],
   toggle: defaultColors['indigo-light'],
-  neumorphShadowOne: '#666666',
-  neumorphShadowTwo: defaultColors['white'],
+  neumorphShadowOne: '#EEEEEE',
+  neumorphShadowTwo: '#F2F2F2',
 }
 
 const darkTheme = {
@@ -19,7 +19,7 @@ const darkTheme = {
   borderAccent: defaultColors['white'],
   toggle: defaultColors['grey-dark'],
   neumorphShadowOne: '#071017',
-  neumorphShadowTwo: '#1d405d',
+  neumorphShadowTwo: '#1D405D',
 }
 
 export { lightTheme, darkTheme }
