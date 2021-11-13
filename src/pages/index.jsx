@@ -67,8 +67,8 @@ const Footer = styled.footer`
 
 const Index = () => (
   <>
-    <Header />
     <Parallax pages={5}>
+    <Header />
       <Hero offset={0}>
         <Greeting>
           Hey 👋🏻 <br />
