@@ -27,7 +27,7 @@ const InnerWave = styled.div`
 
 const Contact = ({ children, offset }) => (
   <>
-    <Divider fill="#23262b" speed={0.2} offset={offset}>
+    <Divider fill="#23262b" speed={0.3} offset={offset}>
       <WaveWrapper>
         <InnerWave>
           <svg
