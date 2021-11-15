@@ -36,10 +36,23 @@ const Terminal = () => {
               rel="noopener noreferrer"
             >
               UCD
+            </a>{' '}
+            &{' '}
+            <a
+              href="https://www.a11yproject.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              a11y best-practices.
             </a>
-            .
             <Styled.Spacer />I really enjoy thinking about Usability, and love
             to make great Designs come to life through code.
+          </Styled.Content>
+          <Styled.Spacer />
+          <Styled.Content>
+            In my spare time I enjoy playing the drums 🥁, reading books about
+            personal finance & self-improvement 📚, and expanding my knowledge
+            about cryptocurrencies 💱.
           </Styled.Content>
           <Styled.Spacer />
           <Styled.Content>
