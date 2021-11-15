@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Divider } from '../elements/Dividers'
+import { Divider } from '../elements/Divider'
 import Content from '../elements/Content'
 import Inner from '../elements/Inner'
 import { UpDown, UpDownWide } from '../styles/animations'

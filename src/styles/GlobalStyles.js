@@ -67,6 +67,6 @@ export default createGlobalStyle`
     }
     
     .react-toggle-track {
-      background: ${({ theme }) => theme.toggle };
+      background: ${({ theme }) => theme.toggle};
     }
 `
