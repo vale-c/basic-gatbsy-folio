@@ -35,9 +35,6 @@ class Circle extends React.Component {
 
     p.draw = () => {
       p.background(bg)
-      // Circle
-      // let size = p.map(vol, 0, 1, 0, 800)
-      // p.ellipse(325, 400, size, size)
       let vol = amp.getLevel()
       volHistory.push(vol)
       p.stroke(255)
@@ -46,7 +43,7 @@ class Circle extends React.Component {
       p.translate(320, 250)
       p.beginShape()
       for (let i = 0; i < 600; i++) {
-        let r = p.map(volHistory[i], 0, 1, 200, 10)
+        let r = p.map(volHistory[i], 0, 1, 2, 400)
         let x = r * p.cos(i)
         let y = r * p.sin(i)
         p.vertex(x, y)
