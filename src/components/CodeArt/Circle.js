@@ -12,7 +12,12 @@ class Circle extends React.Component {
   }
 
   Sketch = p => {
-    let amp, bg, canvas, fft, song
+    let amp,
+      bg,
+      canvas,
+      fft,
+      song,
+      volHistory = []
     // Loads the music file into p5.js to play on click
     p.preload = () => {
       p.soundFormats('mp3')
@@ -30,9 +35,28 @@ class Circle extends React.Component {
 
     p.draw = () => {
       p.background(bg)
-      let level = amp.getLevel()
-      let size = p.map(level, 0, 1, 0, 800)
-      p.ellipse(325, 400, size, size)
+      // Circle
+      // let size = p.map(vol, 0, 1, 0, 800)
+      // p.ellipse(325, 400, size, size)
+      let vol = amp.getLevel()
+      volHistory.push(vol)
+      p.stroke(255)
+      p.noFill()
+
+      p.translate(320, 250)
+      p.beginShape()
+      for (let i = 0; i < 600; i++) {
+        let r = p.map(volHistory[i], 0, 1, 200, 10)
+        let x = r * p.cos(i)
+        let y = r * p.sin(i)
+        p.vertex(x, y)
+      }
+      p.endShape()
+
+      if (volHistory.length > 360) {
+        volHistory.splice(0, 1)
+      }
+      //ellipse(100, 100, 200, vol * 200);
     }
 
     // Toggles song on click
