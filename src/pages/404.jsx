@@ -1,9 +1,9 @@
-import React from "react"
-import Img from "gatsby-image"
-import SEO from "../components/SEO"
-import tw from "tailwind.macro"
-import styled from "styled-components"
-import { graphql } from "gatsby"
+import React from 'react'
+import Img from 'gatsby-image'
+import SEO from '../components/SEO'
+import tw from 'tailwind.macro'
+import styled from 'styled-components'
+import { graphql } from 'gatsby'
 import Header from '../components/Header'
 
 const Title = styled.h1`

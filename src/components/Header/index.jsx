@@ -26,6 +26,10 @@ const mainNavItems = [
     title: 'Work',
     slug: '/work/',
   },
+  {
+    title: 'Creative',
+    slug: '/creative/',
+  },
 ]
 
 const HeaderNav = () => {
