@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Header'
 import './p5sound_fix'
 import 'p5/lib/addons/p5.sound'
 import * as p5 from 'p5'
