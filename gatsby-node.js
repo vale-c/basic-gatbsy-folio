@@ -1,12 +1,32 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
   actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.(glsl|frag|vert|geom|comp|vs|fs|gs|vsh|fsh|gsh|vshader|fshader|gshader)$/,
+          use: ['raw-loader'],
+        },
+      ],
+    },
     resolve: {
       modules: [path.resolve(__dirname, `src`), `node_modules`],
     },
   })
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /p5/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
