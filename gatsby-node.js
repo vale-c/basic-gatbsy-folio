@@ -1,32 +1,12 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.(glsl|frag|vert|geom|comp|vs|fs|gs|vsh|fsh|gsh|vshader|fshader|gshader)$/,
-          use: ['raw-loader'],
-        },
-      ],
-    },
     resolve: {
       modules: [path.resolve(__dirname, `src`), `node_modules`],
     },
   })
-  if (stage === 'build-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /p5/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    })
-  }
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -43,7 +23,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 /* Blog Section */
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.jsx`)
