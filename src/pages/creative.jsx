@@ -33,7 +33,6 @@ const CreativeCoding = () => (
     <Title>Creative Coding</Title>
     <Subtitle>Some fun stuff I build when I feel inspired.</Subtitle>
     <Circle />
-    <StyledLink to="/">🔙 Home</StyledLink>
     <Spacer />
   </Wrapper>
 )
