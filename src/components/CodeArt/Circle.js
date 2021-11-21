@@ -147,7 +147,7 @@ class Circle extends React.Component {
                 rel="noreferrer"
               >
                 song
-              </a>
+              </a>{' '}
               is Brad Pitt from{' '}
               <a
                 href="https://it.wikipedia.org/wiki/M%C3%98"
