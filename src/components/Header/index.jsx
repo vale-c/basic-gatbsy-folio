@@ -23,7 +23,7 @@ const mainNavItems = [
     slug: '/blog/',
   },
   {
-    title: 'Work',
+    title: 'Projects',
     slug: '/work/',
   },
   {
