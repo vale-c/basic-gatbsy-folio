@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const projectTemplate = path.resolve(`src/templates/Project/index.jsx`)
+  const projectTemplate = path.resolve(`src/templates/Work/index.jsx`)
   const resp = await graphql(`
     query {
       allMarkdownRemark(

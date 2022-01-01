@@ -4,7 +4,7 @@ cover: './end-of-year.jpg'
 title: 'New Year, new beginnings...'
 description: 'A few updates before 2021 is over.'
 date: '2021-12-30'
-tags: ['2022', 'new year', 'updates', 'life']
+tags: ['2022', 'New Year', 'Life Updates']
 published: true
 ---
 
