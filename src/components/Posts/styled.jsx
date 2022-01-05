@@ -26,13 +26,14 @@ export const Posts = styled.div`
 `
 
 export const BlogCard = styled.div`
-  ${tw`shadow-lg rounded-lg`};
-  box-shadow: ${({ theme }) => theme.neumorphShadowOne} 9.91px 9.91px 15px, ${({ theme }) => theme.neumorphShadowTwo} -9.91px -9.91px 15px;
+  ${tw`shadow-lg rounded-lg mb-8`};
+  box-shadow: ${({ theme }) => theme.neumorphShadowOne} 9.91px 9.91px 15px,
+    ${({ theme }) => theme.neumorphShadowTwo} -9.91px -9.91px 15px;
   height: 100%;
 `
 
 export const Content = styled.div`
-  ${tw`p-6`};
+  ${tw`p-4`};
 `
 
 export const Date = styled.div`
@@ -49,11 +50,12 @@ export const Description = styled.p`
 `
 
 export const Tags = styled.div`
-  ${tw`flex items-stretch px-6`}
+  box-sizing: border-box;
+  ${tw`mx-4 flex flex-wrap`}
 `
 
 export const Tag = styled.span`
   color: ${({ theme }) => theme.fontAccent};
-  ${tw`flex items-center text-xs font-light font-mono p-2 mr-2 mb-12 rounded`}
+  ${tw`truncate text-xs font-light font-mono mb-2 mr-2 p-2 rounded max-h-8`}
   border: 1px solid ${({ theme }) => theme.borderAccent};
 `

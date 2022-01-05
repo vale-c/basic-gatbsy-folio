@@ -1,5 +1,5 @@
 ---
 category: 'work section'
-title: 'Dev Work 🤓'
+title: 'Work'
 subtitle: 'Projects'
 ---

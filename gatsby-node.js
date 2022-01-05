@@ -76,6 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
+  /* Work Section */
   const projectTemplate = path.resolve(`src/templates/Work/index.jsx`)
   const resp = await graphql(`
     query {

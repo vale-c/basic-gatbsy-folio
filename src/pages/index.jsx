@@ -53,7 +53,7 @@ export const ContactTitle = styled.h1`
 `
 
 const ContactText = styled.p`
-  ${tw`text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-xl md:text-2xl lg:text-3xl relative inline-block`};
 `
 
 export const InnerCardText = styled.p`
