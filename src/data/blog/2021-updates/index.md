@@ -30,7 +30,7 @@ Having less time at hand paradoxically makes you value the time you have much mo
 
 • Beware of [biases](https://xd.adobe.com/ideas/process/user-research/how-to-overcome-cognitive-bias-in-ux-research/), as you will encounter so many of them along the way and the more you know about them the better you will be able to recognize them.
 
-• Get confortable with the concepts of [gulf of execution and gulf of evaluation](https://www.nngroup.com/articles/two-ux-gulfs-evaluation-execution/) as they are vital points which will eventually determine the overall perceived usability of your interface/product.
+• Get comfortable with the concepts of [gulf of execution and gulf of evaluation](https://www.nngroup.com/articles/two-ux-gulfs-evaluation-execution/) as they are vital points which will eventually determine the overall perceived usability of your interface/product.
 
 &emsp;
 
