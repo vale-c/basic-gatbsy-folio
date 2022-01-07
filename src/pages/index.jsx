@@ -47,7 +47,7 @@ const AboutDesc = styled.p`
 `
 
 export const ContactTitle = styled.h1`
-  ${tw`text-4xl lg:text-4xl mb-8 tracking-wide relative inline-block`}
+  ${tw`text-4xl lg:text-4xl mb-8 tracking-wide relative`}
   color: ${({ theme }) => theme.description};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 `
