@@ -58,7 +58,7 @@ const Terminal = () => {
           <Styled.Content>
             Check out my CV{' '}
             <a
-              href="https://drive.google.com/file/d/1BWQfwZdzvKgJEWsxtYdsTVaXvOQ8YwqN/view?usp=sharing"
+              href="https://drive.google.com/file/d/158purXUKsiVHXjDgZXi_FW8dqh1AYFcF/view?usp=sharing"
               target="_blank"
             >
               here
